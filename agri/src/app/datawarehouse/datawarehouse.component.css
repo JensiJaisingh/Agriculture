@@ -1,0 +1,58 @@
+.container{
+    display:flex;
+    padding:10px;
+    /* margin-right: 10px; */
+    margin-left:10px;
+}
+.banner{
+    position:relative;
+}
+.banner h4 {
+    position: absolute;
+    bottom: 100px;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+.img{
+    border-radius: 10px;
+}
+p{
+    text-align:justify;
+}
+h3{
+    font-size: 40px;
+    text-align: left;
+}
+h4{
+    font-size: 40px;
+    text-align: center;
+    color:aliceblue;
+    z-index: 1;
+}
+.banner{
+    background-image: url(../../images/dataware3.jpg);
+    height:95vh;
+}
+.content{
+    margin-left:20px;
+    /* text-align:inherit; */
+    margin-right: 0px;
+}
+.img-container{
+    margin-left: 10px;
+}
+.container1{
+    display:flex;
+    /* position: relative; */
+}
+.img-container1{
+    /* width:60%; */
+    /* height:70%; */
+    margin-left: 10px;
+}
+/* .img{
+    height:80%;
+} */
