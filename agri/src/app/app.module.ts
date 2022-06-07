@@ -18,7 +18,6 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { FormComponent } from './form/form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TalktableComponent } from './talktable/talktable.component';
-import { ActivitiesComponent } from './activities/activities.component';
 import { DatawarehouseComponent } from './datawarehouse/datawarehouse.component';
 import { TrimbleXfillComponent } from './trimble-xfill/trimble-xfill.component';
 import { CardComponent } from './card/card.component';
@@ -38,7 +37,6 @@ import { CardtableComponent } from './cardtable/cardtable.component';
     FormComponent,
     DashboardComponent,
     TalktableComponent,
-    ActivitiesComponent,
     DatawarehouseComponent,
     TrimbleXfillComponent,
     CardComponent,

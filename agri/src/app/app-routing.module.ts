@@ -14,7 +14,6 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { FormComponent } from './form/form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TalktableComponent } from './talktable/talktable.component';
-import { ActivitiesComponent } from './activities/activities.component';
 import { DatawarehouseComponent } from './datawarehouse/datawarehouse.component';
 import { TrimbleXfillComponent } from './trimble-xfill/trimble-xfill.component';
 import { AddcardComponent } from './addcard/addcard.component';
@@ -32,7 +31,6 @@ const routes: Routes = [
 {path:'adminlogin',component:AdminloginComponent},
 {path:'form',component:FormComponent},
 {path:'table',component:TalktableComponent},
-{path:'activities',component: ActivitiesComponent },
 {path:'datawarehouse',component:DatawarehouseComponent },
 {path:'trimblexfill',component:TrimbleXfillComponent },
 {path:'addcard',component:AddcardComponent},

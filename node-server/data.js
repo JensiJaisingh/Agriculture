@@ -7,7 +7,7 @@ const nanodb = nano(process.env.COUCHDB_URL || url); // connect with couchdb
 const agridb = nano(url); // connect to database
  var post=function(value,dbname){
      return agridb.use(dbname).insert(value);
-     console.log('posted')
+     console.log('posted');
  }
  var get = function (val, dbname) {
   return agridb.use(dbname).find(val);

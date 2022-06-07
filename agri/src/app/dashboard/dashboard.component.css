@@ -19,7 +19,7 @@
 
   .left-sidebar {
     top:0;
-    height:calc(100vh-70px);
+    height:calc(100px - 70px);
 
   }
   .left-sidebar a:hover{

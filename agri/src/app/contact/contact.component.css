@@ -14,9 +14,7 @@
     border: 5px #4d4d4d;
     }
      .card .card-body .card-title {
-      font-size: 2.4rem;
       font-family: 'Raleway', sans-serif;
-      /* color: #4d4d4d; */
       font-size: 26px;
       font-weight: 500;
       text-align: center;
@@ -27,7 +25,6 @@
      .card .card-body form label{
       font-size: .9rem;
       font-family: 'Raleway', sans-serif;
-      /* color: #4d4d4d; */
       font-weight: 500;
       text-align: center;
       text-transform: initial;
@@ -42,7 +39,6 @@
     .card-button .submit-btn {
       color: white;
       background: rgb(104, 134, 104);
-      /* height:20px; */
     }
     .opening-hours h3 {
       font-size: 2rem!important;

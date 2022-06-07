@@ -123,7 +123,7 @@ app.post('/carddetails',(request,response)=>{
   }
   )
 });
-app.get("/getcarddetails",(request,response)=>{
+app.get("/getcarddetails",(request,_response)=>{
   console.log(request);
   console.log("admin get card")
   console.log("begin to write data")
