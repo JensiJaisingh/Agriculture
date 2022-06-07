@@ -1,14 +1,15 @@
 <div class="body">
     <div class="container">
-    <form [formGroup]="adminvalid"><h3>Login Form</h3>
+      <h3>Login Form</h3>
+    <form [formGroup]="adminvalid">
     <div class="container1">
-      <label for="user"><b>Username</b></label>
+      <label for="user">Username</label>
       <input type="text" placeholder="Enter username" name="user" formControlName="adminid" required>
       <span class="text-danger"
       *ngIf="adminvalid.controls['adminid'].touched && adminvalid.hasError('required','adminid')">*Email is
       required </span> 
     
-      <label for="pass"><b>Password</b></label>
+      <label for="pass">Password</label>
       <input type="password" placeholder="Enter password" name="pass" formControlName="password" required>
       <span class="text-danger"
       *ngIf="adminvalid.controls['password'].touched && adminvalid.hasError('required','password')">*password is
@@ -17,10 +18,12 @@
     
     
     </div>
+   
   <div>
       <h1></h1>
   </div>
     </form>
 </div>
+
     </div>
 

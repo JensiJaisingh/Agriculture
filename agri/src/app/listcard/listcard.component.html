@@ -1,0 +1,25 @@
+<div class="banner-product" >
+    <div class="navbar">
+    <h1>PRODUCTS</h1> 
+    <label for="form-control mt-5 search"><h6>FILTERS</h6>
+    <input type="search" [(ngModel)]="search" class="form-control mt-5 search" placeholder="Search by keyword" />
+    </label>
+</div>
+
+    <div class="grid-container">
+  <div class="card" *ngFor="let card of getcard|filter:search" >
+    <img  [src]="card.img" alt="" class="product-img default" width="50%" height="50%">
+    <div class="container">
+        <h3>{{card.title}}</h3>
+        <p>{{card.description}}</p>
+    <div class="icons" style="margin: 24px 0;">
+        <button type="submit" class="btn btn-primary btn-block  mb-4" routerLink="/feature"
+        routerLinkActive="active-link">Learn more</button> 
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+

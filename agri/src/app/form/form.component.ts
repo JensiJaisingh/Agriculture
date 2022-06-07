@@ -8,7 +8,8 @@ import { CallserviceService } from '../callservice.service';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-contact!:FormGroup
+contact!:FormGroup;
+search!:string;
   constructor(private formbuilder:FormBuilder, private call:CallserviceService) { }
 
   ngOnInit(): void {
@@ -20,9 +21,9 @@ contact!:FormGroup
     talk:['',Validators.required]
   })
   }
-  submitcontact(formvalue:any){
+submitcontact(formvalue:any){
 console.log(formvalue)
-this.call.query(formvalue).subscribe((data:any)=>{
+this.call.query(formvalue).subscribe(()=>{
   alert('data was posted')
 })
   }

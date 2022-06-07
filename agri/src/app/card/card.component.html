@@ -1,0 +1,27 @@
+<div class="container1">
+    <div class="cards"><label for="text">Filter</label>
+        <input type="text"  class="sf-input-text" placeholder="Search.."/>
+    <button type="submit"><i class="fa fa-search"></i></button>
+
+<h3>Product</h3>
+    <form [formGroup]="card">
+            <label for="first_Name" class="text-dark">Image</label>
+            <input type="text" formControlName="name" class="form-control" placeholder="Enter the Name" required maxlength="15">
+            <span class="text-danger"
+                *ngIf="card.controls['name'].touched && card.hasError('required','name')">*Name
+                 is required </span>
+            <label for="title" class="text-dark">Title</label>
+            <input type="text" formControlName="title" class="form-control" placeholder="Enter title" >
+            <span class="text-danger" *ngIf="card.controls['title'].touched && card.hasError('required','title')">*Title is required
+            </span>
+            <label for="description" class="text-dark">description</label>
+            <input type="text" formControlName="description" class="form-control" placeholder="Enter the description" >
+            <span class="text-danger"
+                *ngIf="card.controls['description'].touched && card.hasError('required','description')">*description
+                 is required </span>
+          
+    </form>
+   
+    <button type="button" class="btn btn-success" (click)='submitcard(this.card.value)'[disabled]="!card.valid">Submit</button>
+</div>
+</div>

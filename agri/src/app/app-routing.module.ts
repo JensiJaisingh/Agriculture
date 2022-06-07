@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { APP_BOOTSTRAP_LISTENER } from '@angular/core';
-// import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { HomeComponent } from './home/home.component';
@@ -18,9 +17,13 @@ import { TalktableComponent } from './talktable/talktable.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { DatawarehouseComponent } from './datawarehouse/datawarehouse.component';
 import { TrimbleXfillComponent } from './trimble-xfill/trimble-xfill.component';
+import { AddcardComponent } from './addcard/addcard.component';
+import { ListcardComponent } from './listcard/listcard.component';
+import { CardtableComponent } from './cardtable/cardtable.component';
 
 const routes: Routes = [
 {path:'',component:HomeComponent},
+{path:'',component:HeaderComponent},
 {path:'features',component:FeaturesComponent},
 {path:'products',component:ProductsComponent },
 {path:'contact',component:ContactComponent},
@@ -31,7 +34,10 @@ const routes: Routes = [
 {path:'table',component:TalktableComponent},
 {path:'activities',component: ActivitiesComponent },
 {path:'datawarehouse',component:DatawarehouseComponent },
-{path:'trimblexfill',component:TrimbleXfillComponent }
+{path:'trimblexfill',component:TrimbleXfillComponent },
+{path:'addcard',component:AddcardComponent},
+{path:'listcard',component:ListcardComponent},
+{path:'cardtable',component:CardtableComponent}
 
 ];
 

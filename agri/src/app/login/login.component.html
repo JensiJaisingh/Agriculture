@@ -2,18 +2,17 @@
     <div class="container">
     <form [formGroup]="emailvalid"><h3><b>User Form</b></h3>
     <div class="container1">
-      <!-- <label><b>Name</b></label>
-      <input type="text" placeholder="Enter your name" name="name" > -->
-      <label for="user"><b>Email</b></label>
+    
+      <label for="user">Email</label>
       <input type="text" placeholder="Enter Email" name="user" formControlName="email" required>
       <span class="text-danger"
       *ngIf="emailvalid.controls['email'].touched && emailvalid.hasError('required','email')">*Email is
       required </span> 
     
-      <label for="pass"><b>Password</b></label>
+      <label for="pass">Password</label>
       <input type="password" placeholder="Enter password" name="pass" formControlName="password" required>
       
-      <label for="pass"><b>Repeat Password</b></label>
+      <label for="pass">Repeat Password</label>
       <input type="password" placeholder="Repeat Password" name="pass" formControlName="password" required>
     
       <button type="submit"(click)='oneUser(this.emailvalid.value)'>Sign up</button>

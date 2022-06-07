@@ -1,0 +1,17 @@
+*{
+    background-color: azure;
+}
+button{
+    color:red;
+}
+input{
+   border-radius: 20px;
+   margin-left: 200px;
+   background-color:white
+}
+h5{
+    text-align: center;
+   margin-left: 200px;
+    
+
+}

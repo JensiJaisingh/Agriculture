@@ -10,7 +10,7 @@
   padding-left: 10px;
 }
 .card:hover{
-  box-shadow: 0 8px 16px 0 black;
+  box-shadow: 0 8px 16px 0 darkgrey;
 }
 .grid-container1, .grid-container2, .grid-container3{
   display:flex;
@@ -53,9 +53,4 @@ h1{
 }
 h3 .ag{
   font-size: 20px;
-}
-.icons{
-  padding: 10px ;
-  /* margin-bottom: 5px; */
-  /* margin:10px; */
 }

@@ -1,13 +1,13 @@
-<!-- <input type="search" [(ngModel)]="find" placeholder="enter the data" class="form-control mt-5 search"> -->
 <div class="input-group">
 <div class="form-outline">
+    <label for="form-control mt-5 search">Search here to obtain the particular data
+    </label>
     <input type="search" [(ngModel)]="search" class="form-control mt-5 search" placeholder="Enter Your Data" />
     <p></p>
-    <!-- <button type="submit" class="btn btn-info" (click)="QueryDetails()">View status</button> -->
 </div>
 </div>
 <table id="table bg-light" class="table">
-    <thead class="text-dark">
+    <thead class="thead-dark">
         <tr>
             <th scope="col">Name</th>
             <th scope="col">email</th>
@@ -18,7 +18,7 @@
         </tr>
     </thead>
     <tbody class="text-dark">
-        <tr *ngFor="let obj of object1|filter:search">
+        <tr *ngFor="let obj of object|filter:search">
             <td scope="row">{{obj.name}}</td>
             <td scope="row">{{obj.email}}</td>
             <td scope="row">{{obj.occupation}}</td>

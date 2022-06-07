@@ -28,6 +28,7 @@
 }
 .para3{
     text-align:left;
+    font-style: italic;
 }
 .img{
     height:90%;
@@ -43,4 +44,6 @@ p{
 }
 .para2, .para3{
     margin-left: 10px;
+    font-style: italic;
+
 }

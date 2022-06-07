@@ -21,14 +21,10 @@ import { TalktableComponent } from './talktable/talktable.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { DatawarehouseComponent } from './datawarehouse/datawarehouse.component';
 import { TrimbleXfillComponent } from './trimble-xfill/trimble-xfill.component';
-// const routes: Routes =[
-//   {path:'',component:HomeComponent},
-//   {path:'features',component:FeaturesComponent},
-//   {path:'products',component:ProductsComponent },
-//   {path:'contact',component:ContactComponent},
-//   // {path:'userlogin',component:LoginComponent},
-//   {path:'login',component:AdminloginComponent}
-// ];
+import { CardComponent } from './card/card.component';
+import { AddcardComponent } from './addcard/addcard.component';
+import { ListcardComponent } from './listcard/listcard.component';
+import { CardtableComponent } from './cardtable/cardtable.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +40,11 @@ import { TrimbleXfillComponent } from './trimble-xfill/trimble-xfill.component';
     TalktableComponent,
     ActivitiesComponent,
     DatawarehouseComponent,
-    TrimbleXfillComponent
+    TrimbleXfillComponent,
+    CardComponent,
+    AddcardComponent,
+    ListcardComponent,
+    CardtableComponent
   ],
   imports: [
     BrowserModule,

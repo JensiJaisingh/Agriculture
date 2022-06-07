@@ -1,28 +1,39 @@
-.banner{
+
+*{
+    overflow: hidden;
+}.banner{
     background: cover;
-    height:500vh;
 }
 .banner-text{
-    background: url(../../images/innovative-agri.jpg);
+    /* background: url(../../images/dataware3.jpg); */
+    background: url(../../images/agrilogo.jpg);
     background-size: cover;
     background-position: center;
     height:100vh;
-    text-align: center;
+    text-align:justify;
+    margin-top: 0px;
     color:#fff;
-    padding-top:180px;
+    padding-top:60px;
 }
-
-.banner-text h1{
-    font-size:80px;
-    padding-top:0px;
+.banner-text h1 {
+    position: absolute;
+    bottom: 200px;
     color:black;
+    width: 100%;
+    height:100px;
+    padding: 20px;
+    font-size:70px;
+    padding-top:0px;
     font-family:'Kaushan Script', cursive;
+  }
+.banner-smalltext, .banner-btn{
+    display: inline-block;
+    padding-top: 0px;
 }
- .banner-text h3{
+ .banner-smalltext h3{
     font-size:40px;
     font-style: italic;
     color:black;
-
 }
 .banner-btn{
     margin:70px auto 0;
@@ -33,9 +44,7 @@
     display:inline-block;
     margin: 0 10px;
     border:3px solid whitesmoke;
-    /* color:white; */
     color:black;
-    /* background-color: #726d6d; */
     background-color: #fff;
     position:relative;
     z-index:1;
@@ -49,7 +58,7 @@
     position:absolute;
     top:0;
     left:0;
-    background:#4d4d4d; ;
+    background:lightgray;
     z-index:-1;
     transition:0.5s;
 }
@@ -57,15 +66,158 @@
     width:100%;
 }
 .banner-btn a:hover {
-    color: #fff;
+    color: rgb(14, 11, 11);
 }
-#read h1{
-    margin-left: 80px;
+.container{
+    align-items:center;
+}
+.agri .container .cont_img img{
+    width:60%;
+    height:90%;
+    /* padding:0px 20px 20px 0px; */
+    border-radius: 20px 20px;
+    margin-right: 0px;
+    margin-left: 120px;
+}
+.agri .container p{
+    margin-left: 10px;
+    margin-right: 120px;
+}
+.agri{
+    background-color: aliceblue;
+    height:120vh;
+}
+.agri h1{
+    margin-left: 360px;
+    text-align: left;
+}
+.iot_agri{
+    height:100vh;
+    background-color: aliceblue;
+}
+
+.read{
+    height:110vh;
+    background-color: rgb(249, 245, 240);
+}
+.read h1{
+    margin-left: 30px;
+    margin-right: 100px;
 }
 .read-content1{
-    display: flex;
+    /* display: flex; */
+    align-items: center;
 }
 .read-content1 p{
-    font-size: 25px;
+    font-size: 20px;
     font-style: italic;
+}
+.read-content1-para{
+    margin-right: 0px;
+    margin-left: 80px;
+    align-items: left;
+}
+.read-content1-para a{
+    align-items: center;
+}
+.read-img{
+    margin-left:0px;
+    width:50%;
+    height:20%;
+    margin-left: 250px;
+}
+.read-img img{
+    border-radius: 20px 20px;
+    width:100%;
+    height:50%;
+}
+.smartfarm-sec{
+  background-color: beige;
+ }
+
+.container p{
+    font-style: italic;
+    font-size: 20px;
+}
+.smartfarm-sec .container h1{
+    margin-left: 10px;
+    text-align: center;
+}
+
+ .smart-farm-img{
+    height:130%;
+    width:100%;
+    align-items:center;
+    margin-right: 100px;
+    margin-left: 310px;
+}
+.smart-farm img{
+    border-radius: 40px;
+    width:60%;
+    height:60%;
+    margin-left: 180px;
+}
+
+.smartfarm_container p{
+    font-style: italic;
+    font-size: 20px;
+}
+.container_page{
+    background-color: bisque;
+}
+
+  h4{
+    font-size: 40px;
+    text-align: center;
+    color:black;
+    z-index: 1;
+}
+.content3, .content2{
+    display:flex;
+}
+.para3{
+    text-align:left;
+}
+.img{
+    height:90%;
+    margin-right: 10px;
+    border-radius: 40px;
+}
+.livestock{
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+.livestock img{
+  width:60%;
+  height:80%;
+  align-items: center;
+  border-radius:  30px 30px ;
+  margin-left: 170px;
+}
+.livestock-container {
+    align-items: center;
+}
+
+.smart-farm-img img{
+    width:50%;
+    height:50%;
+    border-radius:10px 10px  ;
+}
+h1{
+    text-align: center;
+}
+h3,h5{
+    font-size: 30px;
+    color:black;
+}
+
+.para2, .para3{
+    margin-left: 10px;
+}
+
+.container_page{
+    content: inherit;
+    background-color: rgb(210, 201, 201);
+    margin-left: 40px;
+    margin-right: 40px;
 }

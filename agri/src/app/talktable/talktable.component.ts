@@ -8,12 +8,11 @@ import { CallserviceService } from '../callservice.service';
   styleUrls: ['./talktable.component.css']
 })
 export class TalktableComponent implements OnInit {
-object1:any=[];
+object:any=[];
 agridata:any;
 search!:string;
 contact!:FormGroup;
   constructor(private call:CallserviceService) { }
-
   ngOnInit(): void {
     this.QueryDetails();
   }
@@ -23,7 +22,7 @@ contact!:FormGroup;
       this.agridata=this.agridata.docs;
       console.log(this.agridata);
       for(const i of this.agridata){
-            this.object1.push(i);
+            this.object.push(i);
            }
       })
  }
