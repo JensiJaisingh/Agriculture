@@ -42,6 +42,10 @@ export class ListcardComponent implements OnInit {
     });
     
     }
+    view(data:any){
+      let option ={queryParams:data}
+this.router.navigate(['/datawarehouse'],option)
+    }
     delete(id:any,rev:any){
       this.api.Delete(id,rev).subscribe(res=>{
         console.log(res);

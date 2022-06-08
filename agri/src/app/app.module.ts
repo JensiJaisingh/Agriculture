@@ -24,6 +24,7 @@ import { CardComponent } from './card/card.component';
 import { AddcardComponent } from './addcard/addcard.component';
 import { ListcardComponent } from './listcard/listcard.component';
 import { CardtableComponent } from './cardtable/cardtable.component';
+import { LoaderComponent } from './loader/loader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +43,8 @@ import { CardtableComponent } from './cardtable/cardtable.component';
     CardComponent,
     AddcardComponent,
     ListcardComponent,
-    CardtableComponent
+    CardtableComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

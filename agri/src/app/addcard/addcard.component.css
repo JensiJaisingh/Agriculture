@@ -9,6 +9,8 @@
 }
 h3{
     text-align: center;
+    font-size: 40px;
+
 }
 .banner{
     background-image: url(../../images/innovative-agri.jpg);
@@ -25,7 +27,4 @@ input{
 }
 label{
     font-weight: bold;
-}
-h3{
-    font-size: 40px;
 }

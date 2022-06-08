@@ -14,9 +14,15 @@
             </span>
             <label for="description" class="text-dark">
                 Description</label>
-            <input type="text" id="description" formControlName="description" class="form-control" placeholder="Enter the description" >
+            <input type="text-area" id="description" formControlName="description" class="form-control" placeholder="Enter the description" >
             <span class="text-danger"
                 *ngIf="addcard.controls['description'].touched && addcard.hasError('required','description')">*Description
+                 is required </span>
+                 <label for="loader" class="text-dark">
+                    Path</label>
+                 <input type="text" id="loader" formControlName="loader" class="form-control" placeholder="Enter the path" >
+            <span class="text-danger"
+                *ngIf="addcard.controls['loader'].touched && addcard.hasError('required','loader')">*Path
                  is required </span>
           <br>
     <button type="submit" class="btn btn-success" [disabled]="!addcard.valid">Submit</button>

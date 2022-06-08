@@ -1,9 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
-import { APP_BOOTSTRAP_LISTENER } from '@angular/core';
-import { AppComponent } from './app.component';
-import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FeaturesComponent } from './features/features.component';
@@ -22,7 +18,7 @@ import { CardtableComponent } from './cardtable/cardtable.component';
 
 const routes: Routes = [
 {path:'',component:HomeComponent},
-{path:'',component:HeaderComponent},
+{path:'header',component:HeaderComponent},
 {path:'features',component:FeaturesComponent},
 {path:'products',component:ProductsComponent },
 {path:'contact',component:ContactComponent},

@@ -24,12 +24,12 @@ data:any;
     console.log()
   }
   newcard () {
-  let data = {
+  let _data = {
     selector: {
       type: "addcard"
     }
   }
-    this.api.getcard(data).subscribe(res=>{               
+    this.api.getcard(_data).subscribe(res=>{               
       this.carddata=res;
       console.log(res);
       this.carddata=this.carddata.docs;

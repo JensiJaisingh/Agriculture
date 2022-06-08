@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-datawarehouse',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatawarehouseComponent implements OnInit {
 
-  constructor() { }
+  public dataSet:any;
+  constructor(public active: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.active.queryParams.subscribe(data=>{
+      this.dataSet = data;
+      console.log(data)
+    })
   }
 
 }

@@ -2,7 +2,7 @@
     <div class="navbar">
     <h1>PRODUCTS</h1> 
     <label for="form-control mt-5 search"><h6>FILTERS</h6>
-    <input type="search" [(ngModel)]="search" class="form-control mt-5 search" placeholder="Search by keyword" />
+    <input type="search" [(ngModel)]="search"  placeholder="Search by keyword" />
     </label>
 </div>
 
@@ -13,8 +13,8 @@
         <h3>{{card.title}}</h3>
         <p>{{card.description}}</p>
     <div class="icons" style="margin: 24px 0;">
-        <button type="submit" class="btn btn-primary btn-block  mb-4" routerLink="/feature"
-        routerLinkActive="active-link">Learn more</button> 
+        <a><button (click)="view(card)" class="btn btn-primary btn-block  mb-4" 
+         >Learn more</button> </a>
     </div>
     </div>
 </div>

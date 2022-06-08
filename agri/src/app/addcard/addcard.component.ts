@@ -21,6 +21,7 @@ export class AddcardComponent implements OnInit {
      img:['',Validators.required],
      title: ['', Validators.required],
      description: ['',Validators.required],
+     loader: ['',Validators.required],
      _rev:[''],
      _id:['']
 
@@ -32,6 +33,7 @@ export class AddcardComponent implements OnInit {
       img: new FormControl(''),
       title: new FormControl(''),
       description: new FormControl(''),
+      loader: new FormControl('')
     });
   this.submitted=true;
 
@@ -46,6 +48,7 @@ const  Formvalue = this.addcard.value
       img: Formvalue.img,
       title: Formvalue.title,
       description: Formvalue.description,
+      loader: Formvalue.loader,
       type: "addcard",
 
     }

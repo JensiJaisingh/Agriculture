@@ -3,32 +3,33 @@
         <label for="form-control mt-5 search"><h5>Search here to view the particular product</h5>
         </label>
 
-        <input type="search" [(ngModel)]="search" class="form-control mt-5 search" placeholder="Enter Your Data" />
+        <input type="search" [(ngModel)]="search" placeholder="Enter Your Data" />
         <p></p>
 
     </div>
     </div>
-    <table id="table bg-light" class="table">
+    <table  class="table">
         <thead class="text-dark">
             <tr>
                 <th scope="col">Image</th>
                 <th scope="col">Title</th>
                 <th scope="col">Description</th>
+                <th scope="col">Path</th>
                 <th scope="col">Delete</th>
     
             </tr>
         </thead>
         <tbody class="text-dark">
             <tr *ngFor="let card of carddata|filter:search">
-                <td scope="row"> <img *ngIf="card.img" [src]="card.img" width="40" height="40" alt=""/> </td>
-                <td scope="row">{{card.title}}</td>
-                <td scope="row">{{card.description}}</td>
+                <td> <img *ngIf="card.img" [src]="card.img" width="40" height="40" alt=""/> </td>
+                <td>{{card.title}}</td>
+                <td>{{card.description}}</td>
+                <td>{{card.loader}}</td>
                 <td><button class="btn btn-danger" (click)="delete(card._id, card._rev)">Delete</button>
         </td>
             </tr>
         </tbody>
     </table>
     <button type="submit" class="bn btn-info" (click)="newcard()">Get Data</button>
-        
         
     
