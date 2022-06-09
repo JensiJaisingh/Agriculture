@@ -14,9 +14,10 @@
                 <th scope="col">Image</th>
                 <th scope="col">Title</th>
                 <th scope="col">Description</th>
-                <th scope="col">Path</th>
-                <th scope="col">Delete</th>
-    
+                <th scope="col">Content1</th>
+                <th scope="col">Content2</th>
+                <th scope="feature">Feature</th>
+                <th scope="col">Main image</th>
             </tr>
         </thead>
         <tbody class="text-dark">
@@ -24,7 +25,10 @@
                 <td> <img *ngIf="card.img" [src]="card.img" width="40" height="40" alt=""/> </td>
                 <td>{{card.title}}</td>
                 <td>{{card.description}}</td>
-                <td>{{card.loader}}</td>
+                <td>{{card.content1}}</td>
+                <td>{{card.content2}}</td>
+                <td>{{card.feature}}</td>
+                <td> <img *ngIf="card.mainimg" [src]="card.mainimg" width="40" height="40" alt=""/></td>
                 <td><button class="btn btn-danger" (click)="delete(card._id, card._rev)">Delete</button>
         </td>
             </tr>

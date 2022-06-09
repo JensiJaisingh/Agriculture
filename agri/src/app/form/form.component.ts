@@ -23,8 +23,11 @@ search!:string;
   }
 submitcontact(formvalue:any){
 console.log(formvalue)
-this.call.query(formvalue).subscribe(()=>{
+this.call.query(formvalue).subscribe((response)=>{
+  console.log(response);
   alert('data was posted')
+},error=>{
+  console.log(error);
 })
   }
 

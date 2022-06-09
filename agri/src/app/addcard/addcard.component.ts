@@ -21,7 +21,15 @@ export class AddcardComponent implements OnInit {
      img:['',Validators.required],
      title: ['', Validators.required],
      description: ['',Validators.required],
-     loader: ['',Validators.required],
+     content1: ['',Validators.required],
+     content2:['',Validators.required],
+     feature:['',Validators.required],
+     mainimg:['',Validators.required],
+     keyone:['',Validators.required],
+     key2:['',Validators.required],
+     key3:['',Validators.required],
+     key4:['',Validators.required],
+     link:['',Validators.required],
      _rev:[''],
      _id:['']
 
@@ -33,7 +41,15 @@ export class AddcardComponent implements OnInit {
       img: new FormControl(''),
       title: new FormControl(''),
       description: new FormControl(''),
-      loader: new FormControl('')
+      content1: new FormControl(''),
+      content2:new FormControl(''),
+      feature: new FormControl(''),
+      mainimg: new FormControl(''),
+      keyone:new FormControl(''),
+      key2:new FormControl(''),
+      key3:new FormControl(''),
+      key4:new FormControl(''),
+      link:new FormControl('')
     });
   this.submitted=true;
 
@@ -48,7 +64,15 @@ const  Formvalue = this.addcard.value
       img: Formvalue.img,
       title: Formvalue.title,
       description: Formvalue.description,
-      loader: Formvalue.loader,
+      content1: Formvalue.content1,
+      content2: Formvalue.content2,
+      feature: Formvalue.feature,
+      mainimg: Formvalue.mainimg,
+      keyone: Formvalue.keyone,
+      key2: Formvalue.key2,
+      key3: Formvalue.key3,
+      key4: Formvalue.key4,
+      link: Formvalue.link,
       type: "addcard",
 
     }
@@ -61,6 +85,8 @@ const  Formvalue = this.addcard.value
       console.log('data posted')
       this.addcard.reset();
 
+    }, err =>{
+      console.log(err);
     });
         }
         

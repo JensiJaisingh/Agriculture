@@ -52,7 +52,8 @@ this.router.navigate(['/datawarehouse'],option)
         alert("Deleted sucessfully");
         window. location. reload();
 
-      })
+      }
+      )
     }
     }
 

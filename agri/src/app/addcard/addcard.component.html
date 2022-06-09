@@ -18,16 +18,51 @@
             <span class="text-danger"
                 *ngIf="addcard.controls['description'].touched && addcard.hasError('required','description')">*Description
                  is required </span>
-                 <label for="loader" class="text-dark">
-                    Path</label>
-                 <input type="text" id="loader" formControlName="loader" class="form-control" placeholder="Enter the path" >
-            <span class="text-danger"
-                *ngIf="addcard.controls['loader'].touched && addcard.hasError('required','loader')">*Path
-                 is required </span>
+                 <label for="description" class="text-dark">
+                    Content-1</label>
+                <input type="text-area" id="content1" formControlName="content1" class="form-control" placeholder="Enter the content1" >
+                <span class="text-danger"
+                    *ngIf="addcard.controls['content1'].touched && addcard.hasError('required','content1')">*content1
+                     is required </span>
+                     <label for="description" class="text-dark">
+                        Content-2</label>
+                    <input type="text-area" id="content2" formControlName="content2" class="form-control" placeholder="Enter the content2" >
+                    <span class="text-danger"
+                        *ngIf="addcard.controls['content2'].touched && addcard.hasError('required','content2')">*content2
+                         is required </span>
+                     <label for="description" class="text-dark">
+                        Feature</label>
+                    <input type="text-area" id="feature" formControlName="feature" class="form-control" placeholder="Enter the feature" >
+                    <span class="text-danger"
+                        *ngIf="addcard.controls['feature'].touched && addcard.hasError('required','feature')">*Feature
+                         is required </span>
+                         <label for="mainimg" class="text-dark">
+                            Main-Image</label>
+                        <input type="text-area" id="mainimg" formControlName="mainimg" class="form-control" placeholder="Please provide the main image link" >
+                        <span class="text-danger"
+                            *ngIf="addcard.controls['mainimg'].touched && addcard.hasError('required','mainimg')">*Main image
+                             is required </span>
+                             <label for="key1" class="text-dark">
+                                keyone</label>
+                            <input type="text-area" id="keyone" formControlName="keyone" class="form-control" placeholder="Please provide the key points" >
+                            <label for="key2" class="text-dark">
+                                key2</label>
+                            <input type="text-area" id="key2" formControlName="key2" class="form-control" placeholder="Please provide the key points" >
+                            <label for="key3" class="text-dark">
+                                key3</label>
+                            <input type="text-area" id="key3" formControlName="key3" class="form-control" placeholder="Please provide the key points" >
+                            <label for="key4" class="text-dark">
+                                key4</label>
+                            <input type="text-area" id="key4" formControlName="key4" class="form-control" placeholder="Please provide the key points" >
+                            <label for="link" class="text-dark">
+                              Optional image</label>
+                            <input type="text-area" id="link" formControlName="link" class="form-control" placeholder="Please fill this field">
+                            
+                            
+                            
           <br>
     <button type="submit" class="btn btn-success" [disabled]="!addcard.valid">Submit</button>
 </form>
-   
 </div>
 </div>
 </div>

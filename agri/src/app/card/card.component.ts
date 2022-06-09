@@ -24,6 +24,10 @@ card!:FormGroup;
     this.call.query(formvalue).subscribe(
       (data:any)=>{
         alert('data posted successfully')
+        console.log(data);
+      },
+      (err)=>{
+        console.log(err);
       }
     )
   }

@@ -4,28 +4,28 @@
     background-color: beige;
 
 }
+
 .img1{
   width:45%;
   border-radius: 10px;
   margin-left: 0;
 }
-/* .img1:hover, .img3:hover{
-    box-shadow: 0 8px 16px 0 black;
-  } */
+.img1:hover, .img3:hover, .img5:hover{
+    box-shadow: 0 8px 16px 0 darkgrey;
+  }
 h2{
-font-size: 50px;
+font-size: 30px;
 text-shadow: 10px black;
 color:black;
 }
 p{
-    font-size:20px;
+    font-size:18px;
     padding:4px;
     font-style: italic;
     color:black;
 }
 .head h1{
     text-align: center;
-    font-size: 40px;
 }
 .img3{
     width:95%;
@@ -41,6 +41,7 @@ p{
  }
 .img4{
     margin-right: 40px;
+    border-radius: 10px;
 }
 .img5{
     border-radius: 10px;

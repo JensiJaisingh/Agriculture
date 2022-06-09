@@ -46,6 +46,8 @@ data:any;
         alert("Deleted sucessfully");
         window. location. reload();
 
+      },(err)=>{
+        console.log(err)
       })
     }
 }

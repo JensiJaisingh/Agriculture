@@ -1,6 +1,6 @@
 .container{
     width:50%;
-    height:80%;
+    height:fit-content;
     background-color: azure;
     opacity:0.8;
     margin-top: 20px;
@@ -10,13 +10,12 @@
 h3{
     text-align: center;
     font-size: 40px;
-
 }
 .banner{
     background-image: url(../../images/innovative-agri.jpg);
-    height:90vh;
+    height:100vh;
     background-position:center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 button{
     border-radius: 10px;

@@ -24,6 +24,8 @@ contact!:FormGroup;
       for(const i of this.agridata){
             this.object.push(i);
            }
+      }, res=>{
+        console.log(res);
       })
  }
 }

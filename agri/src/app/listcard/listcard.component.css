@@ -18,7 +18,7 @@
     transition: 0.3s;
     text-align: center;
     width:340px;
-    height:400px;
+    height:540px;
     align-items: center;
     padding-left: 10px;
     border-radius: 8px;
@@ -36,7 +36,6 @@ table{
     height:250px;
   }
   a{
-    /* text-decoration: none; */
     font-size:22px;
     color:blue;
   }
@@ -48,33 +47,19 @@ table{
   }
   .icons{
     padding: 10px ;
-    
   }
   * {
     outline: none;
   }
-  
   html,
   body {
     height: 100%;
     min-height: 100%;
   }
-  
   body {
     margin: 0;
     background-color: white;
   }
-  
-  .tb {
-    display: table;
-    width: 100%;
-  }
-  
-  .td {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  
   input{
     color:black;
     background-color:white;
@@ -83,8 +68,6 @@ table{
     margin-right: 10px;
     border-radius: 10px;
   }
-  
-
   img{
     margin-top: 5px;
     border-radius: 5px;
@@ -98,14 +81,11 @@ table{
   .navbar label h6{
     margin-right: 50px;
   }
- 
   .navbar h1{
     align-items: center;
     margin-left: 550px;
   }
   .navbar{
     background: #857a7a;
-    
-
   }
  

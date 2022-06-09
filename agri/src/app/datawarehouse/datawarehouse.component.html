@@ -1,61 +1,44 @@
+<div class="banner1">
 <div class="banner">
-<h4>Data Warehouse: Harness the Power of Data Insights that Drive Productivity, and Profitability</h4>
-
-<img class="image" src="../../images/dataware2.jpg.crdownload" alt="">
+   
 </div>
 <div class="container">
     <div class="img-container">
       <img class="img" [src]="dataSet.img" alt="">
-    </div>
-    <div class="content">
-<h3>{{dataSet.title}}</h3>
-<p>Trimble's large farm and agricultural enterprise customers need streamlined and timely automated data management workflows.</p>
-     <p>This requirement is increasingly becoming a must-have when evaluating hardware purchases.</p>
-<p>  Data Warehouse provides segregated access to customer data, which enables the ability to connect to BI and AI tools such as Tableau and Sisense, as well as the ability to integrate with other systems, such as ERP, payroll, and other sources.</p>
+   
+      <h1>{{dataSet.title}}:</h1><h4>{{dataSet.description}}</h4>
+      <ul>
+      <li>{{dataSet.content1}}</li>
+      <li>{{dataSet.content2}}</li>
+     </ul>
     </div>
 </div>
 <div class="container1">
     <div class="content1">
-        <h3>Key Benefits of Actionable Business Intelligence</h3>
-        <p>Turn the data into actionable insights.</p>
-            <p> Develop ‘exception’ reporting to identify data errors.</p>
-            <p>Build dashboards to visualize and monitor Key Performance Indicators (KPIs).</p>
-            <p>
-                Provide stakeholders with self- service functionality to drill into the data to get the answers they need.
-            </p>
-            <p>
-                Once data views are established, business users can analyze the information with easy to use tools.
-            </p>
+        <h3>Key Benefits of {{dataSet.title}}</h3>
+        <ul>
+            <li>{{dataSet.keyone}}</li>
+            <li>{{dataSet.key2}}</li>
+            <li>{{dataSet.key3}}</li>
+            <li>{{dataSet.key4}}</li>
+            <li>Once data views are established, business users can analyze the information with easy to use tools.</li></ul>
     </div>
-    <div class="img-container1" width="80%" height="90%">
-        <img src="../../images/data4.webp" alt="">
+    <div class="img-container1" >
+      <img class="mainimg" [src]="dataSet.mainimg" alt="">
+
+
+
     </div>
+
 </div>
 
-<section class="trimblecontainer">
-    <h3>Work, move and collaborate faster and safer
-  </h3>
-</section>
-<p></p>
-<div class="content3">
-  <div class="para3">
- <h3>Unprecedented visibility into the world of your work</h3>
- <p>Positioning technology is where we got our start over 40 years ago. We've been leading the way ever since, helping our customers do their life's work from anywhere, without interruptions.
-
-  Tilling, seeding and spraying with centimeter-level accuracy. Precise concrete pours without string lines. Fast, accurate wetland delineations. It's all possible with Trimble.</p>
-</div>
-<div class="img3">
-  <img src="../../images/trimble-xfill.png" alt="">
-</div>
+<div class="container2">
+    <div>
+      <img [src]="dataSet.link" class="link" alt="">
+    </div>
+    <div>
+      <h3>What is {{dataSet.title}}?</h3>
+      <p>{{dataSet.feature}}</p>
+    </div>
 </div>
 <p></p>
-<div class="content2">
-  <div class="img2">
-      <img src="../../images/trp.jpg" alt="">
-</div>
-  <div class="para2">
-      <h5>Bring accuracy, reliability and efficiency to complex operations and networks.</h5>
-  <p>Trimble xFill provides seamless, centimeter-level back-up corrections via satellite if RTK or VRS signal source is interrupted.</p>
-      <p>Use precision agriculture solutions to get critical farm work done smarter, faster and more efficiently – from the office to the field, all year round.</p>
-  </div>
-</div>
