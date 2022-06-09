@@ -8,11 +8,11 @@
 
     <div class="grid-container">
   <div class="card" *ngFor="let card of getcard|filter:search" >
-    <img  [src]="card.img" alt="" class="product-img default" width="50%" height="50%">
+    <img (click)="view(card)" [src]="card.img" alt=""  width="50%" height="50%">
     <div class="container">
         <h3>{{card.title}}</h3>
         <p>{{card.description}}</p>
-    <div class="icons" style="margin: 24px 0;">
+    <div class="icons" style="margin: 28px 0;">
         <a><button (click)="view(card)" class="btn btn-primary btn-block  mb-4" 
          >Learn more</button> </a>
     </div>

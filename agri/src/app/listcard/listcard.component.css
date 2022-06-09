@@ -47,6 +47,7 @@ table{
   }
   .icons{
     padding: 10px ;
+    margin-bottom: 2px;
   }
   * {
     outline: none;
@@ -70,9 +71,10 @@ table{
   }
   img{
     margin-top: 5px;
-    border-radius: 5px;
-    width:80%;
-    height:60%;
+    border-radius:10px;
+    width:85%;
+    height:50%;
+    padding:10px;
   }
   .navbar label{
     justify-content:right;
