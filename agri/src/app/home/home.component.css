@@ -135,11 +135,11 @@ p{
     font-size: 20px;
     padding-right:20px;
 }
-.read-content1-para{
+/* .read-content1-para{
     margin-right: 0px;
     margin-left: 80px;
     align-items: left;
-}
+} */
 .read-content1-para a{
     align-items: center;
 }

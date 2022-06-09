@@ -1,6 +1,6 @@
 # Agriculture
 
-# Title #Agri
+# Title 
 PRECISION AGRICULTURE
 
 # Description
@@ -10,19 +10,20 @@ Precision Agriculture:
 
 # General Information
 
-1.  This site is a learning app for knowing about innovative and modern agriculture .
+1.  This site is a learning site for knowing about innovative and modern agriculture products and techniques.
 
 
 # Project structure
 
     HOME---> Features ---> Products ---> Contact --->Admin Login
 
-              - Admin--> -view user details ,queries and add relavant details in product 
-                           description.
-                         -add products and delete products
+              - Admin--> -add products and delete products
                          -view product details
-           -User--->  can ask their doubts in Precision Agriculture
-                           can view new products
+                         -view user details, queries
+                           
+                         
+              -User--->  -can ask their doubts in Precision Agriculture
+                         -can view products and product description.
                                
               
 
@@ -30,17 +31,15 @@ Precision Agriculture:
 
 1.  First you need not to get into my site.You can visit the detailed view of Precision Agriculture.
 
-2.  User --> User can products and can ask their doubts in contact page of my site.
+2.  User --> User can view products and can ask their doubts in contact page of my site.
 
-3.  Add packages --> Admin can add the packages.
+3.  Add products --> Admin can add the products.
 
-4.  Delete  -->  Admin can delete the packages. 
+4.  Delete Products -->  Admin can delete the products. 
 
-5.  Check the status --> User can  check the status.
+5.  See list --> Admin can see the list of the user details and queries.
 
-6.  See list --> Admin can see the list of the user details and queries.
-
-7.  See list ---> Admin can see the list of the  products.
+6.  See list ---> Admin can see the list of the  products.
 
 # Install and run it locally
 
@@ -62,11 +61,8 @@ Precision Agriculture:
 1. DB Connectivity.
 2. Lookup relation.
 3. Form validation in frontend level.
-4. Form null validation in packages form.
-5. Dynamic tables to display the list of information.
+4. Dynamic tables to display the list of information about the products.
 
-
-# Technology
 
 # Frontend:
 
