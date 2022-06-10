@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { APP_BOOTSTRAP_LISTENER } from '@angular/core';
-import { RouterModule,Routes} from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -25,6 +23,8 @@ import { AddcardComponent } from './addcard/addcard.component';
 import { ListcardComponent } from './listcard/listcard.component';
 import { CardtableComponent } from './cardtable/cardtable.component';
 import { LoaderComponent } from './loader/loader.component';
+import { Feature1Component } from './feature1/feature1.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +44,9 @@ import { LoaderComponent } from './loader/loader.component';
     AddcardComponent,
     ListcardComponent,
     CardtableComponent,
-    LoaderComponent
+    LoaderComponent,
+    Feature1Component,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

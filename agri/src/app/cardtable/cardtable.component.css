@@ -1,17 +1,36 @@
 *{
-    background-color: azure;
+    background-color: darkgrey;
 }
 button{
-    color:red;
+    color:white;
+    background-color:rgb(186, 73, 111);
+}
+caption{
+    text-align:center;
 }
 input{
    border-radius: 20px;
    margin-left: 200px;
-   background-color:white
+   background-color:white;
+   width:300px;
 }
 h5{
-    text-align: center;
+   text-align: center;
    margin-left: 200px;
-    
-
+}
+ td{
+    color:white;
+}
+th{
+    color:rgb(186, 73, 111);
+    font-size: 25px;
+}
+table{
+    margin-left: 40px;
+    margin-right: 40px;
+    background: fixed;
+    width:fit-content;
+}
+.container-table{
+    background-color: darkgrey;
 }

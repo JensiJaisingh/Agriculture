@@ -1,31 +1,45 @@
 .form-outline{
     display:grid inline-table;
 }
-label{
-    font-size:20px;
-}
 table{
     background-color: floralwhite;
     width:80%;
     padding:20px 20px;
     margin-left: 130px;
-    border-radius: 5px black;
+    border-radius: 5px rgb(41, 39, 39);
     outline-style: inset;
     margin-top: 10px;
-
 }
 .input-group{
-    background-color: lightgoldenrodyellow;
+    background-color: #7c0000;
+    background-image: linear-gradient(326deg, #dd3c3c 0%, #a30b0b 74%);
 }
 button{
     margin-left: 1130px;
 }
-
 input{
     border-radius: 20px;
     margin-left: 200px;
-    background-color:white
+    background-color:white;
+    margin-top: 10px;
  }
  label{
-    margin-left:230px;
+    margin-left: 300px;
+    color:aliceblue;
+    text-shadow: whitesmoke;
+    margin-top: 30px;
+}
+  .body{
+    background-color: #7c0000;
+    background-image: linear-gradient(326deg, #dd3c3c 0%, #c81717 74%); 
+ }th, td{
+     /* background-color:black; */
+     color:whitesmoke;
+     background-color: #1a1717;
+ }
+ th{
+     font-size: 20px;
+ }
+ caption{
+     text-align: center;
  }

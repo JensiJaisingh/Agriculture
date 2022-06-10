@@ -6,9 +6,9 @@
     </label>
 </div>
 
-    <div class="grid-container">
+  <div class="grid-container">
   <div class="card" *ngFor="let card of getcard|filter:search" >
-    <img (click)="view(card)" [src]="card.img" alt=""  width="50%" height="50%">
+    <img (click)="view(card)" [src]="card.img" alt="" >
     <div class="container">
         <h3>{{card.title}}</h3>
         <p>{{card.description}}</p>
@@ -17,7 +17,6 @@
          >Learn more</button> </a>
     </div>
     </div>
-</div>
 </div>
 </div>
 

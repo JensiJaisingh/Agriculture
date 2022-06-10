@@ -1,6 +1,6 @@
 .banner-product{
     display:grid inline-table;
-    background-color: rgb(219, 202, 186);
+    background-color: whitesmoke;
     background-position: center;
     height:auto;
     margin-left: 20px;
@@ -14,18 +14,22 @@
     flex-wrap:wrap;
 }
 .card{
-    box-shadow: 0 2px 2px 0 lightgray;
+    box-shadow: 0 5px 5px 0 lightgray;
     transition: 0.3s;
     text-align: center;
     width:340px;
     height:540px;
     align-items: center;
     padding-left: 10px;
-    border-radius: 8px;
+    border-radius: 15px;
     margin:20px 47px;
   }
+  .card img{
+    width:70%;
+    height:40%;
+  }
   .card:hover{
-    box-shadow: 0 8px 16px 0 darkgrey;
+    box-shadow: 0 10px 16px 0 rgb(189, 179, 179);
   }
 table{
     padding:50px;

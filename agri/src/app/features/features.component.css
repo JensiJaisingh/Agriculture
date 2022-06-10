@@ -1,10 +1,8 @@
 .feature-container{
     display: flex;
     padding:10px 20px;
-    background-color: beige;
-
+    background-color: rgb(18, 18, 50);
 }
-
 .img1{
   width:45%;
   border-radius: 10px;
@@ -17,12 +15,13 @@ h2{
 font-size: 30px;
 text-shadow: 10px black;
 color:black;
+text-align: center;
 }
 p{
     font-size:18px;
     padding:4px;
     font-style: italic;
-    color:black;
+    color:white;
 }
 .head h1{
     text-align: center;
@@ -49,11 +48,24 @@ p{
 }
 .container{
     display:flex;
-    padding:10px 10px 10px 10px;
     background-color:rgb(124, 140, 148);
-    width: 100%;
-    border-radius: 10px;
+    background: rgb(23, 140, 176);
+    color:white;
+    margin-right: auto;
+    padding:auto;
 }
+
 .container p{
     text-align:left;
+}
+.body{
+    background: rgb(23, 140, 176);
+
+}
+em{
+    color:black;
+}
+.card{
+    background-color: rgb(9, 47, 49);
+    color:white;
 }

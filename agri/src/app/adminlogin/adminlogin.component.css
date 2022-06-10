@@ -35,7 +35,7 @@
   .container button:hover {
     opacity: 0.8;
   }
-  .body button{
+  /* .body button{
     background-color:rgb(131, 130, 130);
     color: black;
     padding:0px 20px;
@@ -45,7 +45,7 @@
     width: 100%;
     font-size: 20px;
     opacity: 0.6;
-  }
+  } */
   .container1 {
       padding: 16px;
       display: block;

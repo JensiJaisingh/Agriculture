@@ -1,10 +1,13 @@
 .container{
     padding:20px;
     margin-left:10px;
+    height:max-content;
+    display: flex;
 }
 .container h1{
     text-align: center;
 }
+
 .banner1{
    overflow: hidden;
 }
@@ -37,9 +40,13 @@ h3{
     margin-right: 0px;
 }
 .img-container img{
-    margin-left: 300px;
-    width:50%;
-    height:42%;
+    margin-left: 30px;
+    width:100%;
+    height:90%;
+}
+.img-container{
+    width:100%;
+    height:70vh;
 }
 .container2{
     padding:30px 10px  ;
@@ -56,6 +63,15 @@ h3{
 .container1{
     display:flex;
     padding:50px;
+    background-color: aquamarine;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.back-container{
+    background-color: black;
+    height:180vh;
+    width:80%;
+    margin-left: 0px;
 }
   h4{
     font-size: 30px;
@@ -86,4 +102,80 @@ h3{
 }
 .container2 p{
     padding:20px;
+}
+.cont-1{
+    margin-left: 80px;
+}
+.cont-1:hover{
+
+}
+
+#main .container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#main {
+	background-image: url(../../images/homepage.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+#main::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.4;
+	z-index: -1;
+}
+#main .main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#main h1 {
+	display: block;
+	width: fit-content;
+	font-size: 4rem;
+	position: relative;
+	/* color: transparent; */
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 1s;
+}
+#main h1:nth-child(1) {
+	animation-delay: 1s;
+}
+#main h1:nth-child(2) {
+	animation-delay: 2s;
+}
+#main h1:nth-child(3) {
+	animation: text_reveal_name 0.5s ease forwards;
+	animation-delay: 3s;
+}
+#main h1 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: crimson;
+	animation: text_reveal_box 1s ease;
+	animation-delay: 0.5s;
+}
+#main h1:nth-child(1) span {
+	animation-delay: 0.5s;
+}
+#main h1:nth-child(2) span {
+	animation-delay: 1.5s;
+}
+#main h1:nth-child(3) span {
+	animation-delay: 2.5s;
 }

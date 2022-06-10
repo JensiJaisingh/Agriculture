@@ -1,19 +1,21 @@
+<div class="body">
 <div class="input-group">
 <div class="form-outline">
-    <label for="form-control mt-5 search">Search here to obtain the particular data
+    <label for="form-control mt-5 search"><h3><em class="fa fa-search" style="color:black;"></em>Search here to obtain the particular data</h3>
     </label>
     <input type="search" [(ngModel)]="search" class="form-control mt-5 search" placeholder="Enter Your Data" />
     <p></p>
 </div>
 </div>
 <table id="table bg-light" class="table">
+    <caption></caption>
     <thead class="thead-dark">
+
         <tr>
             <th scope="col">Name</th>
-            <th scope="col">email</th>
-            <th scope="col">occupation</th>
-            <th scope="col">query</th>
-           
+            <th scope="col">Email</th>
+            <th scope="col">Occupation</th>
+            <th scope="col">Query</th>
 
         </tr>
     </thead>
@@ -29,6 +31,5 @@
         </tr>
     </tbody>
 </table>
-<button type="submit" class="bn btn-info" (click)="QueryDetails()">Get Data</button>
-    
+</div>  
     

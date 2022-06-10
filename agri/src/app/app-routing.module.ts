@@ -15,6 +15,7 @@ import { TrimbleXfillComponent } from './trimble-xfill/trimble-xfill.component';
 import { AddcardComponent } from './addcard/addcard.component';
 import { ListcardComponent } from './listcard/listcard.component';
 import { CardtableComponent } from './cardtable/cardtable.component';
+import { Feature1Component } from './feature1/feature1.component';
 
 const routes: Routes = [
 {path:'',component:HomeComponent},
@@ -31,7 +32,8 @@ const routes: Routes = [
 {path:'trimblexfill',component:TrimbleXfillComponent },
 {path:'addcard',component:AddcardComponent},
 {path:'listcard',component:ListcardComponent},
-{path:'cardtable',component:CardtableComponent}
+{path:'cardtable',component:CardtableComponent},
+{path:'agrifeature',component:Feature1Component}
 
 ];
 
