@@ -18,7 +18,7 @@
     transition: 0.3s;
     text-align: center;
     width:340px;
-    height:540px;
+    height:500px;
     align-items: center;
     padding-left: 10px;
     border-radius: 15px;
@@ -26,7 +26,8 @@
   }
   .card img{
     width:70%;
-    height:40%;
+    height:45%;
+    padding-right: 20px;
   }
   .card:hover{
     box-shadow: 0 10px 16px 0 rgb(189, 179, 179);
@@ -92,6 +93,6 @@ table{
     margin-left: 550px;
   }
   .navbar{
-    background: #857a7a;
+    background: #cec7c7;
   }
  

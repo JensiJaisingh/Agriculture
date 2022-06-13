@@ -23,6 +23,7 @@ data:any;
   ngOnInit(): void {
     console.log()
   }
+
   newcard () {
   let _data = {
     selector: {
@@ -50,4 +51,5 @@ data:any;
         console.log(err)
       })
     }
+
 }

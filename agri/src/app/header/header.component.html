@@ -1,18 +1,30 @@
-<div class="banner">
+<div class="banner" *ngIf="this.api1.show">
         <div class="navbar">
-       <!-- <img class="logo" href="#" src="../../images/logo.jpg" alt=""> -->
-       <div class="logo"> <span class="material-icons">
-
-    </span>
+       <div class="logo"> 
+        
    AGRI DOT </div>
         <ul>
             <li><a class="active" href="">Home</a></li>
             <li><a href="agrifeature">Features</a></li>
             <li><a href="listcard">Products</a></li>
             <li><a href="form">Contact Us</a></li>
-            <li><a href="adminlogin">Login</a></li>
+            <li><a href="adminlogin" *ngIf="this.api1.show">Login</a></li>
 
             
         </ul>
     </div>
+</div>
+<div class="banner" *ngIf="this.api1.logOutShow">
+    <div class="navbar">
+   <div class="logo"> <span class="material-icons">
+
+</span>
+AGRI DOT </div>
+    <ul>
+        
+        <li><a href="" *ngIf="this.api1.logOutShow" (click)="logOut()">Logout</a></li>
+
+        
+    </ul>
+</div>
 </div>

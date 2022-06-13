@@ -1,7 +1,7 @@
 .feature-container{
     display: flex;
     padding:10px 20px;
-    background-color: rgb(18, 18, 50);
+    background-color: rgb(33, 33, 59);
 }
 .img1{
   width:45%;
@@ -13,8 +13,8 @@
   }
 h2{
 font-size: 30px;
-text-shadow: 10px black;
-color:black;
+text-shadow: 10px rgb(212, 168, 168);
+color:#20c997;
 text-align: center;
 }
 p{
@@ -23,7 +23,7 @@ p{
     font-style: italic;
     color:white;
 }
-.head h1{
+.body h1{
     text-align: center;
 }
 .img3{
@@ -59,13 +59,29 @@ p{
     text-align:left;
 }
 .body{
-    background: rgb(23, 140, 176);
+    background: rgb(171, 182, 185);
 
 }
 em{
-    color:black;
+    color:#20c997;
 }
 .card{
     background-color: rgb(9, 47, 49);
     color:white;
+}
+.player{
+    width: 1690px;
+    height: 100vh;
+    align-items: center;
+}
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
 }

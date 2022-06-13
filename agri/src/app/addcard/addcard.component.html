@@ -3,7 +3,7 @@
     <div class="cards">
 <h3>Add a Product</h3>
     <form (ngSubmit)="saving()" [formGroup]="addcard"  >
-            <label for="img" class="text-dark">Image-I</label>
+            <label for="img" class="text-dark">Product Image</label>
             <input id="img" type="text" formControlName="img" class="form-control" placeholder="Provide product link">
             <span class="text-danger"
                 *ngIf="addcard.controls['img'].touched && addcard.hasError('required','img')">*Please 
@@ -18,7 +18,7 @@
             <span class="text-danger"
                 *ngIf="addcard.controls['description'].touched && addcard.hasError('required','description')">*Description
                  is required </span>
-            <label for="description" class="text-dark">
+            <label for="feature" class="text-dark">
                     Features</label>
             <input type="text-area" id="feature" formControlName="feature" class="form-control" placeholder="Enter the feature" >
                 <span class="text-danger"
@@ -45,10 +45,10 @@
             </label>
            <input type="text-area" id="content2" formControlName="content2" class="form-control" placeholder="Enter the content" >
            <span class="text-danger" *ngIf="addcard.controls['content2'].touched && addcard.hasError('required','content2')">*content2 is required </span>
-            <label for="mainimg" class="text-dark">Image-II</label>
+            <label for="mainimg" class="text-dark">Feature Image</label>
              <input type="text-area" id="mainimg" formControlName="mainimg" class="form-control" placeholder="Please provide the image link" >
             <span class="text-danger"  *ngIf="addcard.controls['mainimg'].touched && addcard.hasError('required','mainimg')">*Main image is required </span>
-            <label for="link" class="text-dark">Image-III</label>
+            <label for="link" class="text-dark">Content Image</label>
            <input type="text-area" id="link" formControlName="link" class="form-control" placeholder="Please provide the image url">
           <br>
     <button type="submit" class="btn btn-success" [disabled]="!addcard.valid">Submit</button>

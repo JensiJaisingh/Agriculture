@@ -24,13 +24,15 @@
     opacity: 0.8;
 }
 
-.navbar nav ul li{
+.navbar nav ul li a{
     padding:5px;
     margin-right:10px;
 
 }
-.navbar nav ul li a:hover{
-    color:#6ebd5b!important;
+.navbar ul li a:hover{
+    color:#20c997!important;
+    cursor: pointer;
+
 }
 .banner{
     width:100%;
@@ -56,7 +58,7 @@
     padding:10px;
 
   }
-  .navbar ul li a{
+  .banner .navbar ul li a{
     text-decoration: none;
     color:white;
     text-transform: uppercase;
@@ -64,17 +66,15 @@
     font-size: 20px;
     padding:5px;
     margin-right: 10px;
+    cursor: pointer;
   }
   
-  .navbar ul li:hover::after{
+  .banner .navbar ul li a:hover::after{
     width:100%;
+    color:#20c997;
+  
   }
-  /* .logo{
-    border-radius: 40px;
-    width:250px;
-    margin-top:5px ;
-    height:50px;
-  } */
+  
   .logo {
     margin-left: 10px;
     color:#20c997;

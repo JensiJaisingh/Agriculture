@@ -10,7 +10,7 @@ export class ProductserviceService {
   // getcard() {
   //   throw new Error('Method not implemented.');
   // }
-  logoutshow: boolean=false;
+  logOutShow: boolean=false;
   show: boolean=true;
 
   url='https://21781b11-9dff-4242-9efa-fb21396540ca-bluemix.cloudantnosqldb.appdomain.cloud/'
@@ -38,11 +38,11 @@ export class ProductserviceService {
   this.url= this.url+'agri_sample/'+id+'?rev='+rev;
   return this.http.delete(this.url,this.httpOptions)
   }
-  // showoff(){
-  //   this.logoutshow = !this.logoutshow;
-  //   this.show = !this.show;
-  //   console.log(this.show)
-  // }
+  showoff(){
+    this.logOutShow = !this.logOutShow;
+    this.show = !this.show;
+    console.log(this.show)
+  }
   // add(){
   //   return this.http.get('http://localhost:8000/table');
   // }

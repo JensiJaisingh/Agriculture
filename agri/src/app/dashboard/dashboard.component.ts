@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductserviceService } from '../productservice.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api1:ProductserviceService) { }
 
   ngOnInit(): void {
   }
-
+  
 }
