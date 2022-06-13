@@ -5,11 +5,10 @@ const url =
   //username:password@endpoint
 const nanodb = nano(process.env.COUCHDB_URL || url); // connect with couchdb
 const agridb = nano(url); // connect to database
- var post=function(value,dbname){
+ const post=function(value,dbname){
      return agridb.use(dbname).insert(value);
-     console.log('posted');
  }
- var get = function (val, dbname) {
+ const get = function (val, dbname) {
   return agridb.use(dbname).find(val);
 }
 
