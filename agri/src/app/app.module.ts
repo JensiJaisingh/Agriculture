@@ -1,11 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FeaturesComponent } from './features/features.component';
@@ -25,6 +24,9 @@ import { CardtableComponent } from './cardtable/cardtable.component';
 import { LoaderComponent } from './loader/loader.component';
 import { Feature1Component } from './feature1/feature1.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpCallInterceptor } from './interceptor';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,9 +56,15 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     ReactiveFormsModule,HttpClientModule,
     // RouterModule.forRoot(routes)
-    Ng2SearchPipeModule
+    Ng2SearchPipeModule,
+    ToastrModule.forRoot(),
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: HttpCallInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

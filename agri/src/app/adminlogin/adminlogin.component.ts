@@ -37,7 +37,6 @@ adminUsermail(formvalue:any){
     console.log('hello');
   this.api1.showoff();
       
-      // window.location.replace('dashboard');
       this.router.navigate(['/dashboard'])
       alert('valid mail id ')
     }
