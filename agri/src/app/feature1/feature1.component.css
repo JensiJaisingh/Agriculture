@@ -150,6 +150,8 @@
   }
   .feature{
     display: flex;
+    margin-top: 40px;
+
   }
   .tech h2{
     text-align: center;
@@ -221,10 +223,7 @@
   .precision-container p{
     line-height: 2;
   }
-  .feature{
-    margin-top: 40px;
-
-  }
+  
   .drone-handling h1{
     text-align: center;
   }

@@ -1,6 +1,12 @@
-*{
-    overflow: hidden;
-}.banner{
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+.banner{
     background: cover;
 }
 .mydiv{
@@ -9,9 +15,7 @@
 a {
 	text-decoration: none;
 }
-p{
-    font-size: 18px;
-}
+
  .agri-container .cont_img img{
     width:50%;
     height:90%;
@@ -105,21 +109,17 @@ p{
  }
 
 p{
-    font-style: italic;
     font-size: 20px;
 }
 .smartfarm-sec .container h1{
     margin-left: 35px;
     text-align: center;
 }
-
-
 .smart-farm img{
     border-radius: 40px;
     width:60%;
     height:55%;
     margin-left: 310px;
-    
 }
 
 .smartfarm_container p{
@@ -187,13 +187,7 @@ h3,h5{
 .container_page p{
    margin-bottom: 10px;
 }
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+
 header
 {
   position: absolute;
@@ -347,6 +341,4 @@ header .logo
     font-size: 2em;
   }
 }
-.text p{
-    font-size: 24px;
-}
+

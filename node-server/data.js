@@ -1,4 +1,4 @@
-var nano = require('nano');
+const nano = require('nano');
 const url =
   'https://apikey-v2-v1zh0zplguvn1ukyhpnqwpt7rhiuokz1bqggmlt9kw4:163671d490ddeef138fc61e470881715@21781b11-9dff-4242-9efa-fb21396540ca-bluemix.cloudantnosqldb.appdomain.cloud'
 

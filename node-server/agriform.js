@@ -30,7 +30,7 @@ app.post('/email',(request,response)=>{
     app.get("/adminlogin", (request, response) => {
       console.log(request);
       console.log('admin get data')
-      console.log("begin to write ddata");
+      console.log("begin to write data");
       const info = {
         selector:{
           type:'adminlogin'
@@ -127,9 +127,4 @@ app.get("/getcarddetails",(request,_response)=>{
   console.log(request);
   console.log("admin get card")
   console.log("begin to write data")
-  const details={
-      selector:{
-        type:'addcard'
-      }
-  }
 })

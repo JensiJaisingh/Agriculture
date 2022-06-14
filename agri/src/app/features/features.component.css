@@ -23,6 +23,8 @@ p{
 }
 .body h1{
     text-align: center;
+    background-color:rgb(182, 173, 176) ;
+
 }
 .img3{
     width:95%;
@@ -69,9 +71,7 @@ p{
     background: rgba(142, 180, 167, 0.014);
 
 }
-.body h1{
-    background-color:rgb(182, 173, 176) ;
-}
+
 em{
     color:black;
 }
