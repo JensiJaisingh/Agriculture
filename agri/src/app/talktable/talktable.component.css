@@ -31,9 +31,8 @@ input{
   .body{
     background-color: #52aa77;
  }th, td{
-     /* background-color:black; */
      color:whitesmoke;
-     background-color: #1a1717;
+     background-color:rgba(0, 0, 0, 0.846);
  }
  th{
      font-size: 20px;

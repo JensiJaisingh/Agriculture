@@ -2,11 +2,8 @@
     background-image: url(../../images/field.webp);
     height:95vh;
     position: relative;
-    /* background: no-repeat; */
 }
-/* .trimblecontainer{
-    position:relative;
-} */
+
 .trimblecontainer h3 {
     position: absolute;
     top: 100px;

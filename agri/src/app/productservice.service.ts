@@ -46,9 +46,7 @@ export class ProductserviceService {
   // add(){
   //   return this.http.get('http://localhost:8000/table');
   // }
-  // getcard(formvalue:any){
-  //   return this.http.post('http://localhost:8000/cardtable',formvalue);
-  // }
+  
   // add1(){
   //   return this.http.get('http://localhost:8000/carddetails');
   // }

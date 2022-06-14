@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
   overflow: hidden;
 }
 .banner{
@@ -26,14 +25,15 @@ a {
 
 .agri{
     background-color:darkcyan;
-    height:fit-content;
     width:100%;
     padding:20px;
     margin-top: 720px;
     box-sizing: border-box;
+    height:fit-content;
+    
 }
 .agri:hover{
-    box-shadow: 10px 10px 6px 0 #acc2c4;
+    box-shadow: 10px 8px 6px 0 #c7cdcd;
     transition: 0.5s;
 }
 .agri h1{
@@ -49,10 +49,8 @@ a {
     padding:20px;
 }
 .iot_agri:hover{
-    box-shadow: 10px 10px 6px 0 rgb(122, 134, 135);
-
+    box-shadow: 10px 6px 6px 0 rgb(203, 209, 209);
 }
-
 .player{
     width: 1690px;
     height: 100vh;
@@ -69,7 +67,7 @@ a {
     padding: 20px;
 }
 .read:hover{
-    box-shadow: 10px 10px 6px 0 rgb(182, 175, 176);
+    box-shadow: 10px 6px 6px 0 rgb(245, 231, 231);
 
 }
 .read h1{
@@ -105,11 +103,12 @@ a {
   
  }
  .smartfarm-sec:hover{
-    box-shadow: 10px 10px 6px 0 rgb(94, 184, 169);
+    box-shadow: 10px 8px 6px 0 rgb(158, 203, 195);
  }
 
 p{
     font-size: 20px;
+    padding: 10px;
 }
 .smartfarm-sec .container h1{
     margin-left: 35px;
@@ -123,7 +122,6 @@ p{
 }
 
 .smartfarm_container p{
-    font-style: italic;
     font-size: 20px;
 }
 
@@ -139,10 +137,7 @@ p{
 .para3{
     text-align:left;
 }
- p{
-    padding: 10px;
-    
-}
+
 .img{
     height:90%;
     margin-right: 10px;

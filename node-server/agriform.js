@@ -17,15 +17,15 @@ app.post('/email',(request,response)=>{
         password:request.body.password,
         type:'user'
     }
-    data.post(object,'agri_sample').then((res)=>{
-        if(res){
-          response.send(res);    
-        }
-        else{
-          response.send('err')
-        }
-       
-      })
+    data.post(object,'agri_sample').then(function (res) {
+      if (res) {
+        response.send(res);
+      }
+      else {
+        response.send('err');
+      }
+
+    })
     });
     app.get("/adminlogin", (request, response) => {
       console.log(request);
@@ -37,8 +37,8 @@ app.post('/email',(request,response)=>{
         }
       }
     
-      data.get(info,"agri_sample").then((res) => {
-    
+      data.get(info,"agri_sample").then(function (res) {
+
         if (res) {
           response.send(res);
         } else {
@@ -54,7 +54,7 @@ app.post('/email',(request,response)=>{
           talk:request.body.talk,
           type:'user'
       }
-      data.post(object,'agri_sample').then((res)=>{
+      data.post(object,'agri_sample').then((res) =>{
           if(res){
             response.send(res);    
           }
