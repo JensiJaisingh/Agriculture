@@ -17,9 +17,9 @@ app.post('/email',(request,response)=>{
         password:request.body.password,
         type:'user'
     }
-    data.post(object,'agri_sample').then(function (res) {
-      if (res) {
-        response.send(res);
+    data.post(object,'agri_sample').then((resp)=> {
+      if (resp) {
+        response.send(resp);
       }
       else {
         response.send('err');
@@ -37,10 +37,10 @@ app.post('/email',(request,response)=>{
         }
       }
     
-      data.get(info,"agri_sample").then(function (res) {
+      data.get(info,"agri_sample").then((resp) =>{
 
-        if (res) {
-          response.send(res);
+        if (resp) {
+          response.send(resp);
         } else {
           response.send("error");
         }
@@ -98,7 +98,7 @@ app.get("/addcard",(request,response)=>{
       type:'addcard'
     }
   }
-  data.get(details,"agri_sample").then((res) =>{
+  data.get(details,"agri_sample").then((res)=>{
     if(res){
       response.send(res);
     }else{
