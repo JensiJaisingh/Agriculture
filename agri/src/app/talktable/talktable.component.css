@@ -30,12 +30,15 @@ input{
 }
   .body{
     background-color: #52aa77;
- }th, td{
+ } td{
      color:whitesmoke;
      background-color:rgba(0, 0, 0, 0.846);
  }
  th{
      font-size: 20px;
+     color:#52aa77;
+     background-color:rgba(0, 0, 0, 0.846);
+
  }
  caption{
      text-align: center;
