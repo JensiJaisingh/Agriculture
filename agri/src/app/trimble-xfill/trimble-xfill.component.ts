@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-trimble-xfill',
   templateUrl: './trimble-xfill.component.html',
   styleUrls: ['./trimble-xfill.component.css']
 })
-export class TrimbleXfillComponent implements OnInit {
+export class TrimbleXfillComponent {
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
 
 }

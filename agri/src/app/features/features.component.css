@@ -1,7 +1,6 @@
 .feature-container{
     display: flex;
     padding:10px 20px;
-    background-color: rgb(33, 33, 59);
 }
 .img1{
   width:45%;
@@ -9,19 +8,18 @@
   margin-left: 0;
 }
 .img1:hover, .img3:hover, .img5:hover{
-    box-shadow: 0 8px 16px 0 darkgrey;
+    box-shadow: 0 8px 8px 0 darkgrey;
   }
 h2{
 font-size: 30px;
 text-shadow: 10px rgb(212, 168, 168);
-color:#20c997;
 text-align: center;
+color:black;
 }
 p{
     font-size:18px;
     padding:4px;
     font-style: italic;
-    color:white;
 }
 .body h1{
     text-align: center;
@@ -48,36 +46,38 @@ p{
 }
 .container{
     display:flex;
-    background-color:rgb(124, 140, 148);
-    color:white;
-    margin-right: auto;
-    padding:auto;
-}
+    background-color:rgb(182, 173, 176) ;
+    width:100%;
+    padding:20px;
+    position:relative; 
 
+}
+.container h3{
+    padding:10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.container img{
+    padding:10px;
+    margin-left: 10px;
+}
 .container p{
     text-align:left;
+    padding:20px;
 }
 .body{
-    background: rgb(171, 182, 185);
+    background: rgba(142, 180, 167, 0.014);
 
 }
+.body h1{
+    background-color:rgb(182, 173, 176) ;
+}
 em{
-    color:#20c997;
+    color:black;
 }
-.card{
-    background-color: rgb(9, 47, 49);
-    color:white;
-}
-.player{
-    width: 1690px;
-    height: 100vh;
-    align-items: center;
-}
-.container { position:relative; }
-.container video {
-    position:relative;
-    z-index:0;
-}
+
+
+
 .overlay {
     position:absolute;
     top:0;

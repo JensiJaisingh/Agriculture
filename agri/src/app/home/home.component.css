@@ -16,24 +16,20 @@ p{
     width:50%;
     height:90%;
     border-radius: 10px 20px;
-    margin-right: 0px;
-    margin-left: 250px;
-    box-shadow: 0px 8px 16px 0 darkgrey;
+    margin-left: 280px;
+    margin-top: 10px;
 }
 
 .agri{
     background-color:darkcyan;
-    height:100vh;
-    width:fit-content;
+    height:fit-content;
+    width:100%;
     padding:20px;
-    margin-left: 100px;
-    margin-right:100px ;
     margin-top: 720px;
     box-sizing: border-box;
-    border-radius: 0px 60px 60px 0px;
 }
 .agri:hover{
-    box-shadow: 10px 10px 6px 0 #3a757a;
+    box-shadow: 10px 10px 6px 0 #acc2c4;
     transition: 0.5s;
 }
 .agri h1{
@@ -42,12 +38,10 @@ p{
 }
 .iot_agri{
     height:fit-content;
+    width:100%;
     background-color: rgb(175, 180, 186);
     margin-top:80px ;
-    margin-left: 100px;
-    margin-right: 100px;
     margin-bottom: 80px;
-    border-radius: 0px 60px 60px 0px;
     padding:20px;
 }
 .iot_agri:hover{
@@ -64,17 +58,14 @@ p{
 }
 .read{
     height:fit-content;
-    background-color: rgb(247, 229, 233);
+    background-color: rgb(224, 217, 219);
     margin-top: 80px;
-    width:fit-content;
-    margin-left: 100px;
-    margin-right: 100px;
+    width:100%;
     margin-bottom: 80px;
-    border-radius:0px 60px 60px 0px;
     padding: 20px;
 }
 .read:hover{
-    box-shadow: 10px 10px 6px 0 rgb(226, 185, 193);
+    box-shadow: 10px 10px 6px 0 rgb(182, 175, 176);
 
 }
 .read h1{
@@ -92,7 +83,8 @@ p{
 .read-img{
     width:50%;
     height:20%;
-    margin-left: 250px;
+    margin-left: 280px;
+    margin-top: 10px;
 }
 .read-img img{
     border-radius: 20px 20px;
@@ -100,19 +92,16 @@ p{
     height:50%;
 }
 .smartfarm-sec{
-  background-color: rgb(205, 205, 113);
+  background-color: rgb(43, 184, 165);
   margin-top: 80px;
   margin-bottom: 80px;
-  margin-left: 100px;
-  margin-right: 100px;
   height:fit-content;
-  width:fit-content;
-  border-radius: 0px 60px 60px 0px;
+  width:100%;
   padding:20px;
   
  }
  .smartfarm-sec:hover{
-    box-shadow: 10px 10px 6px 0 rgb(165, 166, 98);
+    box-shadow: 10px 10px 6px 0 rgb(94, 184, 169);
  }
 
 p{
@@ -120,22 +109,17 @@ p{
     font-size: 20px;
 }
 .smartfarm-sec .container h1{
-    margin-left: 10px;
+    margin-left: 35px;
     text-align: center;
 }
 
- .smart-farm-img{
-    height:130%;
-    width:100%;
-    align-items:center;
-    margin-right: 100px;
-    margin-left: 310px;
-}
+
 .smart-farm img{
     border-radius: 40px;
     width:60%;
-    height:60%;
-    margin-left: 180px;
+    height:55%;
+    margin-left: 310px;
+    
 }
 
 .smartfarm_container p{
@@ -155,24 +139,21 @@ p{
 .para3{
     text-align:left;
 }
-.agri-container p{
-    padding-left: 10px;
+ p{
+    padding: 10px;
+    
 }
 .img{
     height:90%;
     margin-right: 10px;
     border-radius: 40px;
 }
-.livestock{
-    margin-right: 10px;
-    margin-bottom: 0px;
-}
+
 .livestock img{
   width:60%;
   height:60%;
-  align-items: center;
   border-radius:  30px 30px ;
-  margin-left: 170px;
+  margin-left: 310px;
 }
 .livestock-container {
     align-items: center;
@@ -198,11 +179,14 @@ h3,h5{
 .container_page{
     width:100%;
     background-color: rgb(204, 191, 191);
+    height:fit-content;
 }
 .container_page img{
     margin-top: 30px;
 }
-/*  */
+.container_page p{
+   margin-bottom: 10px;
+}
 *
 {
   margin: 0;
@@ -306,7 +290,6 @@ header .logo
   background: #fff;
   padding: 10px 30px;
   text-transform: uppercase;
-  /* text-decoration: none; */
   font-weight: 500;
   margin-top: 10px;
   color: #111;

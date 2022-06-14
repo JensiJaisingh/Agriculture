@@ -18,16 +18,18 @@
     transition: 0.3s;
     text-align: center;
     width:340px;
-    height:500px;
+    height:540px;
     align-items: center;
     padding-left: 10px;
     border-radius: 15px;
     margin:20px 47px;
   }
-  .card img{
-    width:70%;
-    height:45%;
-    padding-right: 20px;
+  .card_img img{
+    width:90%;
+    height:90%;
+  }
+  .card_img{
+    height:250px;
   }
   .card:hover{
     box-shadow: 0 10px 16px 0 rgb(189, 179, 179);
@@ -37,8 +39,16 @@ table{
     display: inline;
 }
 .container{
-    padding:2px 16px;
-    height:250px;
+    padding:2px 18px;
+    height:260px;
+  }
+  .container h3{
+    height:50px;
+  }
+  .container p{
+    height:60px;
+    margin-top: 5px;
+    padding: 5px;
   }
   a{
     font-size:22px;
@@ -93,6 +103,6 @@ table{
     margin-left: 550px;
   }
   .navbar{
-    background: #cec7c7;
+    background: #857a7a;
   }
  

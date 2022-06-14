@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { ProductserviceService } from '../productservice.service';
 import { ListcardComponent } from '../listcard/listcard.component';
 @Component({
@@ -6,11 +6,7 @@ import { ListcardComponent } from '../listcard/listcard.component';
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-export class ProductsComponent implements OnInit {
+export class ProductsComponent  {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
