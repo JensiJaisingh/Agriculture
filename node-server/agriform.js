@@ -98,9 +98,9 @@ app.get("/addcard",(request,response)=>{
       type:'addcard'
     }
   }
-  data.get(details,"agri_sample").then((res)=>{
-    if(res){
-      response.send(res);
+  data.get(details,"agri_sample").then((resp)=>{
+    if(resp){
+      response.send(resp);
     }else{
       response.send("error");
     }

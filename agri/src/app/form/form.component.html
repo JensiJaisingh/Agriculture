@@ -9,22 +9,23 @@
     <form [formGroup]="contact">
             <label for="first_Name" >Name</label>
             <input type="text" formControlName="name" class="form-control" placeholder="Enter the Name" required maxlength="15">
+            <div>
             <span class="text-danger"
                 *ngIf="contact.controls['name'].touched && contact.hasError('required','name')">*Name
-                 is required </span>
+                 is required </span></div>
             <label for="email" >Email</label>
             <input type="text" formControlName="email" class="form-control" placeholder="Enter email" >
-            <span class="text-danger" *ngIf="contact.controls['email'].touched && contact.hasError('required','name')">*Email is required
-            </span>
+            <div> <span class="text-danger" *ngIf="contact.controls['email'].touched && contact.hasError('required','name')">*Email is required
+            </span></div>
             <label for="occupation" >Occupation</label>
             <input type="text" formControlName="occupation" class="form-control" placeholder="Enter the occupation" >
-            <span class="text-danger"
+            <div>  <span class="text-danger"
                 *ngIf="contact.controls['occupation'].touched && contact.hasError('required','occupation')">*Occupation
-                 is required </span>
+                 is required </span></div>
             <label for="talk" >Talk to us here..</label>
             <input type="text-area" formControlName="talk" class="form-control" placeholder="Your doubts in precision agriculture" >
-            <span class="text-danger"
-                     *ngIf="contact.controls['talk'].touched && contact.hasError('required','talk')">*This field is required </span>
+            <div>  <span class="text-danger"
+                     *ngIf="contact.controls['talk'].touched && contact.hasError('required','talk')">*This field is required </span></div>
                  <p></p>
     </form>
     <button type="button" class="btn btn-info" (click)='submitcontact(this.contact.value)'[disabled]="!contact.valid">Submit</button>

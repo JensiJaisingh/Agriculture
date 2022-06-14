@@ -94,7 +94,7 @@ a {
     height:50%;
 }
 .smartfarm-sec{
-  background-color: rgb(43, 184, 165);
+  background-color:rgb(142, 198, 187) ;
   margin-top: 80px;
   margin-bottom: 80px;
   height:fit-content;
@@ -266,7 +266,7 @@ header .logo
 }
 .text p
 {
-  font-size: 1.1em;
+  font-size: 20px;
   color: #fff;
   margin: 20px 0;
   font-weight: 400;
