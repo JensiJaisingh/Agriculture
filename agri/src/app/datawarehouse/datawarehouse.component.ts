@@ -10,7 +10,7 @@ export class DatawarehouseComponent implements OnInit {
 
   public dataSet:any;
   constructor(public active: ActivatedRoute) { }
-
+   
   ngOnInit(): void {
     this.active.queryParams.subscribe(data=>{
       this.dataSet = data;

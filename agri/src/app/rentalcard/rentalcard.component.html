@@ -1,0 +1,26 @@
+<div class="banner-product" >
+    <div class="navbar">
+    <h1>PRODUCTS</h1> 
+    <label for="form-control mt-5 search">
+    <input type="search" [(ngModel)]="search"  placeholder="Search by keyword" />
+    </label>
+</div>
+
+  <div class="grid-container">
+  <div class="card" *ngFor="let card of getcard|filter:search" >
+      <div class="card_img">
+    <img (click)="view(card)" [src]="card.img" alt="" ></div>
+    <div class="container">
+        <h3>{{card.title}}</h3>
+        <p>{{card.description}}</p>
+     
+    </div>
+
+    <div class="icons" style="margin: 58px 50px;">
+        <a><button (click)="view(card)" class="btn btn-primary btn-block  mb-4" >Rental</button> </a>
+    </div>
+</div>
+
+
+
+

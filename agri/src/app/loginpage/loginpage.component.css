@@ -1,0 +1,23 @@
+img{
+    /* width:90%;
+    height:90%; */
+    padding:100px;
+
+}
+.container{
+    display:flex;
+    align-items: center;
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+}
+.grid-container{
+    display:grid;
+    padding: auto;
+
+}
+button{
+    width:120px;
+    margin-left: 150px;
+}

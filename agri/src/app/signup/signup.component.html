@@ -1,0 +1,62 @@
+<div class="container">
+    <div>
+        <h1>Signup Form</h1>
+        <form   [formGroup]="signup">
+            <label for="firstname" >First Name</label>
+            <input type="text" formControlName="firstname" class="form-control" placeholder="Enter the firstname" required maxlength="15">
+            <div>
+            <span class="text-danger"
+                *ngIf="signup.controls['firstname'].touched && signup.hasError('required','firstname')">*First Name
+                 is required </span></div>
+
+            <label for="lastname" >Last Name</label>
+            <input type="text" formControlName="lastname" class="form-control" placeholder="Enter the lastname" required maxlength="15">
+            <div>
+            <span class="text-danger"
+                    *ngIf="signup.controls['lastname'].touched && signup.hasError('required','lastname')">*Last Name
+                    is required </span></div>
+
+            <label for="email" >Email</label>
+            <input type="text" formControlName="email" class="form-control" placeholder="Enter email" >
+            <div> <span class="text-danger" *ngIf="signup.controls['email'].touched && signup.hasError('required','email')">*Email is required
+            </span></div>
+
+            <label for="mobile" >Mobile Number</label>
+            <input type="text" formControlName="mobile" class="form-control" placeholder="Enter the mobile number" required maxlength="12" >
+            <div> <span class="text-danger" *ngIf="signup.controls['mobile'].touched && signup.hasError('required','mobile')">*Mobile number is required
+            </span></div>
+
+            <label for="city" >City</label>
+            <input type="text" formControlName="city" class="form-control" placeholder="Enter city" >
+            <div> <span class="text-danger" *ngIf="signup.controls['city'].touched && signup.hasError('required','city')">*City Name is required
+            </span></div>
+
+            <label for="postal" >Zip / Postal code</label>
+            <input type="text" formControlName="postal" class="form-control" placeholder="Enter the postal code number" >
+            <div> <span class="text-danger" *ngIf="signup.controls['postal'].touched && signup.hasError('required','postal')">*Postal code number is required
+            </span></div>
+
+            <label for="country" >Country / Region</label>
+            <input type="text" formControlName="country" class="form-control" placeholder="Enter the country" >
+            <div>  <span class="text-danger"
+                *ngIf="signup.controls['country'].touched && signup.hasError('required','country')">*Country / Region
+                 is required </span></div>
+
+            <label for="occupation" >Occupation</label>
+            <input type="text" formControlName="occupation" class="form-control" placeholder="Enter the occupation" >
+            <div>  <span class="text-danger"
+                     *ngIf="signup.controls['occupation'].touched && signup.hasError('required','occupation')">*Occupation
+                      is required </span></div>   
+
+            <label for="interest" >Interests</label>
+            <input type="text-area" formControlName="interest" class="form-control" placeholder="Your doubts in precision agriculture" >
+            <div>  <span class="text-danger"
+                     *ngIf="signup.controls['interest'].touched && signup.hasError('required','interest')">*This field is required </span></div>
+                 <p></p>
+    </form>
+    <input type="checkbox" id="agreement" name="agreement" value="agreement">
+    <label for="agreement">
+    I allow AgriDot, its affiliates and business partners (e.g resellers) to contact me via telephone and e-mail and provide information specific to my interests. </label>
+    <button type="button" class="btn btn-success"  (click)="saving()">Submit</button>
+    </div>
+</div>

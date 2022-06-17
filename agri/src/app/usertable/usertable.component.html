@@ -1,0 +1,49 @@
+<div class="input-group">
+    <div class="form-outline">
+        <label for="form-control mt-5 search"><h5>Search here to view the particular product</h5>
+        </label>
+
+        <input type="search" [(ngModel)]="search" placeholder="Enter Your Data" />
+        <p></p>
+
+    </div>
+    </div>
+    <div class="container-table">
+    <table  class="table table-dark">
+        <caption></caption>
+        <thead class="text-dark">
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mobile Number</th>
+                <th scope="col">City</th>
+                <th scope="col">Postal-Code</th>
+                <th scope="col">Country</th>
+                <th scope="col">Occupation</th>
+                <th scope="col">Interest</th>
+                <th scope="col">Accept Request</th>
+                <th scope="col">Delete Request</th>
+            </tr>
+        </thead>
+        <tbody class="text-dark">
+            <tr *ngFor="let card of userdata|filter:search">
+                <td>{{card.firstname}}</td>
+                <td>{{card.lastname}}</td>
+                <td>{{card.email}}</td>
+                <td>{{card.mobile}}</td>
+                <td>{{card.city}}</td>
+                <td>{{card.postal}}</td>
+                <td>{{card.country}}</td>
+                <td>{{card.occupation}}</td>
+                <td>{{card.interest}}</td>
+                <td><button class="btn btn-success" (click)="accept(card)" routerLink="/dashboard">Accept</button></td>
+                <td><button class="btn btn-danger" (click)="delete(card._id, card._rev)">Delete</button>
+        </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="bn btn-info" (click)="newdata()">Get Data</button>
+</div>   
+    
+

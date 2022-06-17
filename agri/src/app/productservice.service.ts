@@ -7,9 +7,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductserviceService {
-  // getcard() {
-  //   throw new Error('Method not implemented.');
-  // }
+  getquery() {
+    throw new Error('Method not implemented.');
+  }
+  
   logOutShow: boolean=false;
   show: boolean=true;
 
@@ -28,7 +29,31 @@ export class ProductserviceService {
     const url = this.url + db;
     return this.http.post(url, doc, this.httpOptions)
   }
+  data(db: string, doc: object): Observable<{}> {
+    const url = this.url + db;
+    return this.http.post(url, doc, this.httpOptions)
+  }
+  login(){
+    const url =  this.url +'agri_sample/_find';
+    const basicAuth = 'Basic ' + btoa(this.dbUserName + ':' + this. dbPassword );
+    const object = {
+      selector: {
+        type: 'reseller',
+      },
+    };
+    return this.http.post(url, object, {
+      headers: { Authorization: basicAuth },
+    });
+  }
+  getreseller(data:any): Observable<{}> {
+    const url = this.url +'agri_sample/_find';
+    return this.http.post( url,data, this.httpOptions)
+  }
   getcard(data:any): Observable<{}> {
+    const url = this.url +'agri_sample/_find';
+    return this.http.post( url,data, this.httpOptions)
+  }
+  getdata( data:any): Observable<{}> {
     const url = this.url +'agri_sample/_find';
     return this.http.post( url,data, this.httpOptions)
   }
@@ -43,11 +68,6 @@ export class ProductserviceService {
     this.show = !this.show;
     console.log(this.show)
   }
-  // add(){
-  //   return this.http.get('http://localhost:8000/table');
-  // }
+
   
-  // add1(){
-  //   return this.http.get('http://localhost:8000/carddetails');
-  // }
 }

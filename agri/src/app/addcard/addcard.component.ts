@@ -29,6 +29,7 @@ export class AddcardComponent implements OnInit {
      key3:['',Validators.required],
      key4:['',Validators.required],
      link:['',Validators.required],
+     amount:['',Validators.required],
      _rev:[''],
      _id:['']
 
@@ -48,14 +49,13 @@ export class AddcardComponent implements OnInit {
       key2:new FormControl(''),
       key3:new FormControl(''),
       key4:new FormControl(''),
-      link:new FormControl('')
+      link:new FormControl(''),
+      amount:new FormControl('')
     });
   this.submitted=true;
 
   }
-  // get id() {return this.addcard.get('id')!;}
-  // get name() {return this.addcard.get('title')!;}
-  // get description() {return this.addcard.get('description')!;}
+  
 
 saving() {
 const  Formvalue = this.addcard.value
@@ -72,6 +72,7 @@ const  Formvalue = this.addcard.value
       key3: Formvalue.key3,
       key4: Formvalue.key4,
       link: Formvalue.link,
+      amount:Formvalue.amount,
       type: "addcard",
 
     }

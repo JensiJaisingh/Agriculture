@@ -1,0 +1,79 @@
+<div class="container">
+        <div class="container1">
+        <div class="img-container">
+            <img class="img" [src]="dataSet.img" alt="">
+          </div>
+          <div>
+        <h1>{{dataSet.title}}:</h1><h4>{{dataSet.description}}</h4>
+        <h3>Rental Amount for 3 hours</h3>
+        <h4>Rs.{{dataSet.amount}}</h4></div>
+     </div>
+        
+   
+        <h1>Rent this product</h1>
+    
+        <form  [formGroup]="rental">
+            <label for="firstname" >First Name</label>
+            <input type="text" formControlName="firstname" class="form-control" placeholder="Enter the firstname" required maxlength="15">
+            <div>
+            <span class="text-danger"
+                *ngIf="rental.controls['firstname'].touched && rental.hasError('required','firstname')">*First Name
+                 is required </span></div>
+
+            <label for="lastname" >Last Name</label>
+            <input type="text" formControlName="lastname" class="form-control" placeholder="Enter the lastname" required maxlength="15">
+            <div>
+            <span class="text-danger"
+                    *ngIf="rental.controls['lastname'].touched && rental.hasError('required','lastname')">*Last Name
+                    is required </span></div>
+
+            <label for="email" >Email</label>
+            <input type="text" formControlName="email" class="form-control" placeholder="Enter email" >
+            <div> <span class="text-danger" *ngIf="rental.controls['email'].touched && rental.hasError('required','email')">*Email is required
+            </span></div>
+
+            <label for="mobile" >Mobile Number</label>
+            <input type="text" formControlName="mobile" class="form-control" placeholder="Enter the mobile number" required maxlength="12" >
+            <div> <span class="text-danger" *ngIf="rental.controls['mobile'].touched && rental.hasError('required','mobile')">*Mobile number is required
+            </span></div>
+
+            <label for="address" >Address</label>
+            <input type="text" formControlName="address" class="form-control" placeholder="Enter the address" >
+            <div>  <span class="text-danger"
+                     *ngIf="rental.controls['address'].touched && rental.hasError('required','address')">*Address
+                      is required </span></div>   
+
+            <label for="postal" >Zip / Postal code</label>
+            <input type="text" formControlName="postal" class="form-control" placeholder="Enter the postal code number" >
+            <div> <span class="text-danger" *ngIf="rental.controls['postal'].touched && rental.hasError('required','postal')">*Postal code number is required
+            </span></div>
+
+            <label for="country" >Country / Region</label>
+            <input type="text" formControlName="country" class="form-control" placeholder="Enter the country" >
+            <div>  <span class="text-danger"
+                *ngIf="rental.controls['country'].touched && rental.hasError('required','country')">*Country / Region
+                 is required </span></div>
+
+             <label for="date">Date</label>
+             <input type="date" formControlName="date" class="form-control" placeholder="Enter  the date"  min="{{ maxDate }}" />
+             <div> <span class="text-danger"*ngIf=" rental.controls['date'].touched && rental.hasError('required', 'date')" >*date is required
+            </span></div>
+
+            <label for="hours" >Hours</label>
+            <input type="time" formControlName="hours" class="form-control" placeholder="Your doubts in precision agriculture" >
+            <div>  <span class="text-danger"
+                     *ngIf="rental.controls['hours'].touched && rental.hasError('required','hours')">*This field is required </span></div>
+                 <p></p>
+   
+    </form>
+    <div>
+        <input type="checkbox" id="manager1" name="manager1" value="manager1">
+        <label for="manager1">I need one operator</label>
+        <input type="checkbox" id="manager2" name="manager2" value="manager2" >  
+        <label for="manager2">I need two operator</label>
+        <input type="checkbox" id="manager" name="manager" value="manager">
+        <label for="manager2">I need a team of operators</label>
+    <label for="agreement">
+    By clicking submit, You are allowing AgriDot, its affiliates and business partners (e.g resellers) to contact you via mobile and e-mail and provide information specific to your interests. </label></div>
+    <button type="button" class="btn btn-success"  (click)="saving()">Submit</button>
+</div>

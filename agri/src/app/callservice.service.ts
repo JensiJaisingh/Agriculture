@@ -10,11 +10,18 @@ export class CallserviceService {
   {
     return this.http.post('http://localhost:8000/email',formvalue);
   }
+  query(formvalue:any){
+    return this.http.post('http://localhost:8000/talk',formvalue);
+  }
   adminlogin(){
     return this.http.get('http://localhost:8000/adminlogin');
   }
-  query(formvalue:any){
-    return this.http.post('http://localhost:8000/talk',formvalue);
+  resellerlogin(){
+    return this.http.get('http://localhost:8000/resellerlogin');
+  }
+  resellerdetails(formvalue:any)
+  {
+    return this.http.post('http://localhost:8000/email',formvalue);
   }
   getquery(){
     return this.http.get('http://localhost:8000/gettalk');
@@ -25,4 +32,5 @@ export class CallserviceService {
   getcard(formvalue:any){
     return this.http.post('http://localhost:8000/getcarddetails',formvalue);
   }
+ 
 }

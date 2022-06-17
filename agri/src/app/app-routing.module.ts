@@ -11,12 +11,16 @@ import { FormComponent } from './form/form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TalktableComponent } from './talktable/talktable.component';
 import { DatawarehouseComponent } from './datawarehouse/datawarehouse.component';
-import { TrimbleXfillComponent } from './trimble-xfill/trimble-xfill.component';
 import { AddcardComponent } from './addcard/addcard.component';
 import { ListcardComponent } from './listcard/listcard.component';
 import { CardtableComponent } from './cardtable/cardtable.component';
 import { Feature1Component } from './feature1/feature1.component';
-
+import { SignupComponent } from './signup/signup.component';
+import { UsertableComponent } from './usertable/usertable.component';
+import { ResellerloginComponent } from './resellerlogin/resellerlogin.component';
+import { RentalcardComponent } from './rentalcard/rentalcard.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
+import { RentalformComponent } from './rentalform/rentalform.component';
 const routes: Routes = [
 {path:'',component:HomeComponent},
 {path:'header',component:HeaderComponent},
@@ -29,11 +33,16 @@ const routes: Routes = [
 {path:'form',component:FormComponent},
 {path:'table',component:TalktableComponent},
 {path:'datawarehouse',component:DatawarehouseComponent },
-{path:'trimblexfill',component:TrimbleXfillComponent },
 {path:'addcard',component:AddcardComponent},
 {path:'listcard',component:ListcardComponent},
 {path:'cardtable',component:CardtableComponent},
-{path:'agrifeature',component:Feature1Component}
+{path:'agrifeature',component:Feature1Component},
+{path:'signup',component:SignupComponent },
+{path:'usertable',component:UsertableComponent },
+{path:'resellerlogin',component:ResellerloginComponent},
+{path:'rentalcard',component:RentalcardComponent},
+{path:'loginpage',component:LoginpageComponent},
+{path:'rentalform',component:RentalformComponent}
 
 ];
 

@@ -1,0 +1,24 @@
+<div class="container">
+    <form [formGroup]="resellervalid">
+    <div class="container1">
+    <h3>Reseller Login </h3>
+      <label for="user">User name</label>
+      <input type="text" placeholder="Enter email" name="user" class="formcontrol" formControlName="resellerid" required>
+      <span class="text-danger"
+      *ngIf="resellervalid.controls['resellerid'].touched && resellervalid.hasError('required','resellerid')">*Email is
+      required </span> 
+    
+      <label for="pass">Password</label>
+      <input type="password" placeholder="Enter mobile number" name="pass" class="formcontrol" formControlName="password" required>
+      <span class="text-danger"
+      *ngIf="resellervalid.controls['password'].touched && resellervalid.hasError('required','password')">*password is
+      required </span> 
+      <button type="submit"(click)='resellerUsermail(this.resellervalid.value)'>Login</button>
+    
+    
+    </div>
+   
+  
+    </form>
+  </div>
+  

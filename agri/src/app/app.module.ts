@@ -16,7 +16,6 @@ import { FormComponent } from './form/form.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TalktableComponent } from './talktable/talktable.component';
 import { DatawarehouseComponent } from './datawarehouse/datawarehouse.component';
-import { TrimbleXfillComponent } from './trimble-xfill/trimble-xfill.component';
 import { CardComponent } from './card/card.component';
 import { AddcardComponent } from './addcard/addcard.component';
 import { ListcardComponent } from './listcard/listcard.component';
@@ -27,6 +26,12 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpCallInterceptor } from './interceptor';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SignupComponent } from './signup/signup.component';
+import { UsertableComponent } from './usertable/usertable.component';
+import { ResellerloginComponent } from './resellerlogin/resellerlogin.component';
+import { RentalcardComponent } from './rentalcard/rentalcard.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
+import { RentalformComponent } from './rentalform/rentalform.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,14 +46,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DashboardComponent,
     TalktableComponent,
     DatawarehouseComponent,
-    TrimbleXfillComponent,
     CardComponent,
     AddcardComponent,
     ListcardComponent,
     CardtableComponent,
     LoaderComponent,
     Feature1Component,
-    FooterComponent
+    FooterComponent,
+    SignupComponent,
+    UsertableComponent,
+    ResellerloginComponent,
+    RentalcardComponent,
+    LoginpageComponent,
+    RentalformComponent,
   ],
   imports: [
     BrowserModule,

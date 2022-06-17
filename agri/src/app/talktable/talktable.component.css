@@ -29,15 +29,15 @@ input{
     margin-top: 30px;
 }
   .body{
-    background-color: #52aa77;
+    background-color: #7ea68e;
  } td{
-     color:whitesmoke;
-     background-color:rgba(0, 0, 0, 0.846);
+     color:white;
+     background-color:black;
  }
  th{
      font-size: 20px;
-     color:#52aa77;
-     background-color:rgba(0, 0, 0, 0.846);
+     color:white;
+     background-color:black;
 
  }
  caption{

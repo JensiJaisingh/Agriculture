@@ -155,6 +155,7 @@
     flex-direction: row;
     margin-top: 80px;
     padding: 20px;
+    height:fit-content;
   }
   .cards img {
     width: 340px;
@@ -171,8 +172,7 @@
     width: 400px;
     color: white;
     background-color: #151226fd;
-
-    height: 670px;
+    height: 780px;
     border-radius: 10px;
     
   }

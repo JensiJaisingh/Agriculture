@@ -4,12 +4,21 @@
         
    AGRI DOT </div>
         <ul>
-            <li><a class="active" href="">Home</a></li>
-            <li><a href="agrifeature">Features</a></li>
-            <li><a href="listcard">Products</a></li>
-            <li><a href="form">Contact Us</a></li>
-            <li><a href="adminlogin" *ngIf="this.api1.show">Login</a></li>
-
+            <li><a class="active" routerLink="/" routerLinkActive="active">Home</a></li>
+            <li><a routerLink="/agrifeature" routerLinkActive="active">Features</a></li>
+            <li><a routerLink="/listcard" routerLinkActive="active">Products</a></li>
+            <li><a routerLink="/form" routerLinkActive="active">Contact Us</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">
+      
+                </button>
+                <div class="dropdown-content">
+                    <a routerLink="/adminlogin" routerLinkActive="active" *ngIf="this.api1.show">Admin</a>
+                    <a routerLink="/resellerlogin" routerLinkActive="active" *ngIf="this.api1.show">Reseller</a>
+                </div>
+            </div>
+            <li><a routerLink="/loginpage" routerLinkActive="active" *ngIf="this.api1.show">Login</a>  </li> 
+            <li><a  routerLink="/signup" routerLinkActive="active">Signup</a></li>
             
         </ul>
     </div>

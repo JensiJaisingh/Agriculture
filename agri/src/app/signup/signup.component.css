@@ -17,14 +17,14 @@
     border-radius: 8px;
   }
   .container button {
-    background-color:rgb(131, 130, 130);
+    background-color:rgb(53, 194, 53);
     color: black;
     padding: 14px 20px;
     margin: 8px 0;
     align-items: center;
     border-radius: 8px;
     cursor: pointer;
-    width: 60%;
+    width: 100px;
     font-size: 20px;
     height:60px;
   }
@@ -32,11 +32,9 @@
     opacity: 0.8;
   }
   
-  .container1 {
+  .container {
       padding: 16px;
       display: block;
-      width:400px;
-      height:350px;
       border: 8px black;
       border-radius: 10px;
       background-color: white;
@@ -48,10 +46,11 @@
         font-size: 30px;
         margin-left: 100px;
     }
-    h3{
+    h1{
       text-transform: uppercase;
       text-align: center;
-      color:white;
+      color:black;
       font-size: 30px;
+      margin-top: 10px;
     }
   
