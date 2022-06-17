@@ -28,7 +28,7 @@
                      *ngIf="contact.controls['talk'].touched && contact.hasError('required','talk')">*This field is required </span></div>
                  <p></p>
     </form>
-    <button type="button" class="btn btn-info" (click)='submitcontact(this.contact.value)'[disabled]="!contact.valid">Submit</button>
+    <button type="button" class="btn" (click)='submitcontact(this.contact.value)'[disabled]="!contact.valid">Submit</button>
 </div>
 </div>
 <div class="container2">

@@ -4,7 +4,12 @@
      <h2 class="logo">AGRI DOT</h2>
    
   </header>
-  <video src="https://assets.mixkit.co/videos/preview/mixkit-flying-over-a-green-wheat-field-17573-large.mp4" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" muted loop autoplay>
+  <video src="https://assets.mixkit.co/videos/preview/mixkit-flying-over-a-green-wheat-field-17573-large.mp4" title="YouTube video player" controls preload="metadata"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" muted loop autoplay>
+    <source src="resources/myvideo.webm" type="video/mp4">
+    <source src="resources/myvideo.webm" type="video/webm">
+   <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
+   <track label="Deutsch" kind="captions" srclang="de" src="resources/myvideo-de.vtt">
+   <track label="Español" kind="captions" srclang="es" src="resources/myvideo-es.vtt">
   </video>
 
   <div class="overlay"></div>

@@ -33,9 +33,10 @@
       width:350px;
     }
     label{
-      color:white;
-      font-size:15px;
+      color:rgb(141, 36, 36);
+      font-size:18px;
       margin-top: 10px;
+    
     }
     .container1 label .form-control{
       width: 500px;
@@ -45,7 +46,8 @@
       margin: 0 auto;
       background: #000;
       border-radius: 50px;
-      background-image: url(../../images/back2.jpg);
+      background-image: url(../../images/uuuu.webp);
+      background-size: cover;
       background-repeat: no-repeat;
       width:800px;
     }
@@ -53,14 +55,14 @@
     .container2{
       margin-left: 60px;
       display: inline-block;
-      color:white;
+      color:rgb(21, 21, 21);
     }
     .banner1 .head{
        text-align: center;
     }
     .banner1{
       display:flexbox;
-      background-color: rgb(233, 226, 226);
+      background-color: rgb(246, 243, 243);
       /* background-color: #03e5b7; */
 /* background-image: linear-gradient(315deg, #03e5b7 0%, #037ade 74%); */
       background-size: cover;
@@ -79,4 +81,8 @@
     .contactliststyle em{
       font-size:24px; 
       margin-right: 10px;
+    }
+    button{
+      background-color:rgb(11, 11, 11);
+      color:white;
     }

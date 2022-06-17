@@ -78,7 +78,11 @@ export class RentalformComponent implements OnInit {
 
           });
         }
-              
+                     
+        onReset():void {
+          this.submitted=false;
+          this.rental.reset();
+        }
         
         futureDate(){
           let date = new Date();

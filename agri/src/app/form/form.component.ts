@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ToastrService } from 'ngx-toastr';
 import { CallserviceService } from '../callservice.service';
 
 @Component({
@@ -10,7 +11,8 @@ import { CallserviceService } from '../callservice.service';
 export class FormComponent implements OnInit {
 contact!:FormGroup;
 search!:string;
-  constructor(private formbuilder:FormBuilder, private call:CallserviceService) { }
+submitted=false;
+  constructor(private formbuilder:FormBuilder, private call:CallserviceService, private toastr:ToastrService) { }
 
   ngOnInit(): void {
     this.contact=this.formbuilder.group(
@@ -25,10 +27,16 @@ submitcontact(formvalue:any){
 console.log(formvalue)
 this.call.query(formvalue).subscribe((response)=>{
   console.log(response);
-  alert('data was posted')
+  this.toastr.success('data was posted')
 },error=>{
   console.log(error);
+  this.toastr.error('Data cannot be posted empty')
 })
+  }
+         
+  onReset():void {
+    this.submitted=false;
+    this.contact.reset();
   }
 
 }
