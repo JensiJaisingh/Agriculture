@@ -106,9 +106,9 @@ app.get("/addcard",(request,response)=>{
       type:'addcard'
     }
   }
-  data.get(details,"agri_sample").then((resp)=>{
-    if(resp){
-      response.send(resp);
+  data.get(details,"agri_sample").then((newdata)=>{
+    if(newdata){
+      response.send(newdata);
     }else{
       response.send("error");
     }
@@ -148,9 +148,9 @@ app.get("/user",(request,response)=>{
       type:'reseller'
     }
   }
-  data.get(details,"agri_sample").then((resp)=>{
-    if(resp){
-      response.send(resp);
+  data.get(details,"agri_sample").then((resp1)=>{
+    if(resp1){
+      response.send(resp1);
     }else{
       response.send("error");
     }
@@ -169,9 +169,9 @@ app.post('/userdetails',(request,response)=>{
     interest:request.body.talk,      
     type:'reseller'
   }
-  data.post(object,'agri_sample').then((resp)=>{
-    if(resp){
-      response.send(resp);
+  data.post(object,'agri_sample').then((resp2)=>{
+    if(resp2){
+      response.send(resp2);
     }
     else{
       response.send('err');
@@ -189,9 +189,9 @@ app.get("/resellerlogin",(request,response)=>{
       mobile:''
     }
   }
-  data.get(details,"agri_sample").then((resp)=>{
-    if(resp){
-      response.send(resp);
+  data.get(details,"agri_sample").then((resp3)=>{
+    if(resp3){
+      response.send(resp3);
     }else{
       response.send("error");
     }
@@ -203,9 +203,9 @@ app.post('/resellerdetails',(request,response)=>{
     password:request.body.mobile,
     type:'reseller'
   }
-  data.post(object,'agri_sample').then((resp)=>{
-    if(resp){
-      response.send(resp);
+  data.post(object,'agri_sample').then((resp4)=>{
+    if(resp4){
+      response.send(resp4);
     }
     else{
       response.send('err');
